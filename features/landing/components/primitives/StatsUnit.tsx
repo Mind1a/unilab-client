@@ -1,9 +1,31 @@
-import { StatsProps } from "@features/landing/types"
+"use client"
 
-const StatsUnit = ({ num, text }: StatsProps) => {
+import { StatsProps } from "@features/landing/types"
+import { useEffect, useRef, useState } from "react"
+import { animate, useInView } from "motion/react"
+
+const StatsUnit = ({ num, text, decimals = 0 }: StatsProps) => {
+  const ref = useRef<HTMLDivElement | null>(null)
+  const isInView = useInView(ref, { once: true })
+  const [displayValue, setDisplayValue] = useState("0")
+
+  useEffect(() => {
+    if (!isInView) return
+
+    animate(0, num, {
+      duration: 1,
+      onUpdate(value) {
+        const formatted = value.toFixed(decimals)
+        setDisplayValue(formatted)
+      },
+    })
+  }, [num, decimals, isInView])
+
   return (
     <div className="flex flex-col gap-9">
-      <div className="text-8xl">{num}</div>
+      <div ref={ref} className="text-8xl">
+        {displayValue}
+      </div>
       <span className="text-lg">{text}</span>
     </div>
   )
