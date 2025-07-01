@@ -7,6 +7,15 @@
   font-size: normal;
 }
 
+@layer utilities {
+  .font-case {
+    -moz-font-feature-settings: "case";
+    -webkit-font-feature-settings: "case";
+    font-feature-settings: "case";
+    font-family: "noto-sans", sans-serif;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
