@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "noto-sans";
+  src: url("/fonts/NotoSansGeorgian-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-size: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
