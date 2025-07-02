@@ -23,10 +23,10 @@ const StatsUnit = ({ num, text, decimals = 0 }: StatsProps) => {
 
   return (
     <div className="flex flex-col gap-9">
-      <div ref={ref} className="text-8xl">
+      <div ref={ref} className="text-5xl md:text-8xl">
         {displayValue}
       </div>
-      <span className="text-lg">{text}</span>
+      <span className="text-sm md:text-lg">{text}</span>
     </div>
   )
 }
