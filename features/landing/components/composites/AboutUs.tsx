@@ -25,8 +25,9 @@ const AboutUs = () => {
               გუშინდელ თავზე სინათლის წლით წინ იყო…
             </p>
 
-            <button className="mt-[46px] ml-auto w-fit rounded-[4px] border border-white px-6 py-2 text-[16px] text-white transition-all hover:bg-white hover:text-black">
+            <button className="mt-[46px] ml-auto flex h-[48px] max-w-[142px] items-center gap-2 rounded-[8px] border border-white px-6 py-2 text-[16px] text-white transition-all hover:bg-white hover:text-black">
               ვრცლად
+              <img src="Btn.Arrow.svg" alt="arrowUp" className="h-4 w-4" />
             </button>
           </div>
         </div>
