@@ -2,11 +2,11 @@ import { uniCourseData } from "@features/landing/data/landingData"
 import UnicourseCard from "@features/landing/components/primitives/UnicourseCard"
 const Unicourse = () => {
   return (
-    <section className="ml-auto w-[1068px]">
-      <h2 className="font-case mb-[88px] text-center text-5xl leading-[56px] font-black text-[#EDFAFF]">
+    <section className="mx-auto flex max-w-[1104px] flex-col gap-[48px] px-[31px] md:gap-[88px] md:px-[18px] md:pl-9">
+      <h2 className="font-case text-center text-[32px] leading-[56px] font-black text-[#EDFAFF] sm:text-[32px] md:text-5xl">
         უნიკურსი
       </h2>
-      <div className="grid grid-cols-3 gap-6 px-[18px_!important]">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-6">
         {uniCourseData.map((course) => (
           <UnicourseCard
             key={course.id}
