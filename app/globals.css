@@ -36,7 +36,7 @@
 }
 
 body {
-  background-color: #090707;
-  color: var(--foreground);
-  font-family: noto-sans, sans-serif;
+  background: #0a0a0a;
+  color: #ededed;
+  font-family: "noto-sans", Arial, Helvetica, sans-serif;
 }
