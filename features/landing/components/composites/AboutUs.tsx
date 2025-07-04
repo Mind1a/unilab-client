@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
-    <div className="m-auto flex flex-col justify-center bg-black px-4 py-12">
-      <div className="ml-[288px] flex h-[524px] w-[1137px] flex-col">
+    <div className="flex flex-col justify-center bg-black px-4 py-12">
+      <div className="mx-auto flex max-w-[1137px] flex-col">
         <h2 className="mb-6 text-[48px] font-[900]">ჩვენ შესახებ</h2>
 
         <div className="flex flex-1">
@@ -13,8 +13,8 @@ const AboutUs = () => {
             />
           </div>
 
-          <div className="mt-[110px] flex flex-1 flex-col items-end justify-between pl-8 text-white">
-            <p className="w-[512px] text-justify leading-[24px]">
+          <div className="mt-[110px] flex flex-1 flex-col items-end justify-between text-white">
+            <p className="leading-[24px]">
               ოდესმე გიფიქრია პატარა ოთახზე, რომელში შესვლისას დროსა და სივრცეში
               იკარგები და საშუალება გეძლევა მომავლის გარკვეული ნაწილი დაინახო?
               ისეთი იმპულსები მიიღო, რომლებიც სუპერძალებს შეგძენდა? მოგესალმებით
