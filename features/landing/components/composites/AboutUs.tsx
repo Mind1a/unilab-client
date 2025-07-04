@@ -5,7 +5,7 @@ const AboutUs = () => {
         <h2 className="mb-6 text-[48px] font-[900]">ჩვენ შესახებ</h2>
 
         <div className="flex flex-1">
-          <div className="mt-[88px] flex h-[308px] w-full max-w-[466px] justify-center">
+          <div className="mt-[88px] flex h-[308px] max-w-[100%] justify-center">
             <img
               src="Image.Unilab.svg"
               alt="Unilab Logo"
