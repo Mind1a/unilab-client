@@ -35,6 +35,7 @@ export const uniCourseData = [
     title: "ინტერფეისის დიზაინი",
     image: interfaceCommunicationImage,
   },
+]
 
 export const statsData = [
   { num: 61, text: "კურსი" },

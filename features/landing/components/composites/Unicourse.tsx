@@ -2,7 +2,7 @@ import { uniCourseData } from "@features/landing/data/landingData"
 import UnicourseCard from "@features/landing/components/primitives/UnicourseCard"
 const Unicourse = () => {
   return (
-    <section className="mx-auto flex max-w-[1104px] flex-col gap-[48px] px-[31px] md:gap-[88px] md:px-[18px] md:pl-9">
+    <section className="mx-auto flex w-full max-w-[1104px] flex-col gap-[48px] px-[31px] md:gap-[88px] md:px-[18px] md:pl-9">
       <h2 className="font-case text-center text-[32px] leading-[56px] font-black text-[#EDFAFF] sm:text-[32px] md:text-5xl">
         უნიკურსი
       </h2>
