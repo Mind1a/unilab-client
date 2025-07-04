@@ -25,9 +25,6 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
-      root:
-        specifier: git+https://github.com/tanstack/react-query.git
-        version: git+https://github.com/tanstack/react-query.git#4425423588713311d5d949fc29ccfa647e927c98
     devDependencies:
       "@eslint/eslintrc":
         specifier: ^3
@@ -1718,7 +1715,6 @@ packages:
         optional: true
       react-dom:
         optional: true
-
   function-bind@1.1.2:
     resolution:
       {
@@ -2758,7 +2754,6 @@ packages:
         integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==,
       }
     engines: { iojs: ">=1.0.0", node: ">=0.10.0" }
-
   root@git+https://github.com/tanstack/react-query.git#4425423588713311d5d949fc29ccfa647e927c98:
     resolution:
       {
@@ -2767,7 +2762,6 @@ packages:
         type: git,
       }
     version: 0.0.0
-
   run-parallel@1.2.0:
     resolution:
       {
@@ -4855,10 +4849,7 @@ snapshots:
       supports-preserve-symlinks-flag: 1.0.0
 
   reusify@1.1.0: {}
-
-  root@git+https://github.com/tanstack/react-query.git#4425423588713311d5d949fc29ccfa647e927c98:
-    {}
-
+  root@git+https://github.com/tanstack/react-query.git#4425423588713311d5d949fc29ccfa647e927c98: {}
   run-parallel@1.2.0:
     dependencies:
       queue-microtask: 1.2.3
