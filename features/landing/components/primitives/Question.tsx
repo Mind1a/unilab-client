@@ -16,7 +16,9 @@ const Question = ({ title, children, id }: QuestionProps) => {
         className="mb-3 flex w-full cursor-pointer items-center justify-between gap-4 lg:mb-6"
       >
         <div className="flex items-center gap-4 text-[#EDFAFF] lg:text-[#D4D4D4]">
-          <p className="text-4 lg:text-6 font-normal lg:font-medium">{id}</p>
+          <p className="text-[16px] font-normal lg:text-[24px] lg:font-medium">
+            {id}
+          </p>
           <p className="text-start text-[14px] font-bold lg:text-[18px] lg:font-medium">
             {title}
           </p>
