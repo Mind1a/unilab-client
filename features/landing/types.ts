@@ -10,3 +10,19 @@ export interface StatsProps {
   text: string
   decimals?: number
 }
+
+export type NewsCardProps = {
+  id: number
+  image: {
+    src: string
+  }
+  title: string
+  paragraph: string
+  date: string
+  href: string
+}
+
+export type ArrowProps = {
+  isDisabled: boolean
+  direction: "left" | "right"
+}

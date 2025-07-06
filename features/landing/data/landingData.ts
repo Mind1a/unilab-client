@@ -1,8 +1,13 @@
+// uniCourse imports
 import python from "../assets/python.png"
 import frontEndImage from "../assets/front-end.png"
 import ictImage from "../assets/ict.png"
 import graphicDesignImage from "../assets/graphic-design.png"
 import interfaceCommunicationImage from "../assets/interface-communication-shared.png"
+
+// Slide images imports
+import slideImg1 from "@features/landing/assets/slide-image-1.png"
+import slideImg2 from "@features/landing/assets/slide-image-2.png"
 
 export const uniCourseData = [
   {
@@ -42,4 +47,37 @@ export const statsData = [
   { num: 240, text: "სტაჟიორი" },
   { num: 595, text: "სტუდენტი" },
   { num: 835, text: "სერტიფიკატი" },
+]
+
+export const newsData = [
+  {
+    id: 1,
+    title: "ქაოსიდან კოსმოსამდე",
+    image: slideImg1,
+    paragraph: `
+    თუ ტექნოლოგიები შენი ცხოვრების ნაწილია, მაშინ დაგაინტერესებს
+    სანდრო ასათიანის წიგნი “ქაოსიდან კოსმოსამდე”, რომელიც  წიგნის
+    ვებ გამოცემას წარმოადგენს. ამ წიგნით მოყოლილი ამბები
+    ტექნოლოგიებსა და თანამედროვე ადამიანის მაგიურ შესაძლებლობებზეა
+    და მისი წაკითხვა, მოსმენა მხოლოდ ტექნოლოგიების წყალობით არის
+    შესაძლებელი.
+    `,
+    date: "მაი. 29 2024",
+    href: "#",
+  },
+  {
+    id: 2,
+    title: "ქაოსიდან კოსმოსამდე",
+    image: slideImg2,
+    paragraph: `
+    თუ ტექნოლოგიები შენი ცხოვრების ნაწილია, მაშინ დაგაინტერესებს
+    სანდრო ასათიანის წიგნი “ქაოსიდან კოსმოსამდე”, რომელიც  წიგნის
+    ვებ გამოცემას წარმოადგენს. ამ წიგნით მოყოლილი ამბები
+    ტექნოლოგიებსა და თანამედროვე ადამიანის მაგიურ შესაძლებლობებზეა
+    და მისი წაკითხვა, მოსმენა მხოლოდ ტექნოლოგიების წყალობით არის
+    შესაძლებელი.
+    `,
+    date: "მაი. 29 2024",
+    href: "#",
+  },
 ]
