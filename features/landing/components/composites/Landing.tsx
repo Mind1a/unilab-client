@@ -1,3 +1,4 @@
+import News from "@features/landing/components/composites/News"
 import AboutUs from "./AboutUs"
 import Acceleration from "./Acceleration"
 import Stats from "./Stats"
@@ -10,6 +11,7 @@ const Landing = () => {
       <Stats />
       <Acceleration />
       <Unicourse />
+      <News />
     </div>
   )
 }
