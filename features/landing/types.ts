@@ -1,4 +1,3 @@
-
 import { StaticImageData } from "next/image"
 
 export interface UniCourseCardProps {
@@ -17,6 +16,13 @@ export type QuestionProps = {
   id: string
   children: React.ReactNode
 }
+
+export type AccelerationLink = {
+  id: number
+  label: string
+  href: string
+}
+
 export type FaqProps = {
   id: string
   question: string

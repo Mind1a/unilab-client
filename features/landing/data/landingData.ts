@@ -1,4 +1,4 @@
-
+import { AccelerationLink } from "../types"
 import { FaqProps } from "../types"
 import python from "../assets/python.png"
 import frontEndImage from "../assets/front-end.png"
@@ -46,6 +46,16 @@ export const statsData = [
   { num: 835, text: "სერტიფიკატი" },
 ]
 
+export const accelerationLinks: AccelerationLink[] = [
+  { id: 1, label: "ციფრული მარკეტინგი", href: "/" },
+  { id: 2, label: "გრაფიკული დიზაინი", href: "/" },
+  { id: 3, label: "ინტერფეისის დიზაინი", href: "/" },
+  { id: 4, label: "front-end react", href: "/" },
+  { id: 5, label: "Python", href: "/" },
+  { id: 6, label: "front-end (HTML, Css, js)", href: "/" },
+  { id: 7, label: "ციფრული პროექტების მართვა", href: "/" },
+  ]
+
 export const Faqs: FaqProps[] = [
   {
     id: "01",
@@ -85,4 +95,3 @@ export const Faqs: FaqProps[] = [
     answer:
       "იმ შემთხვევაში, თუ პირველ გაერთიანებულ ლექციაზე დასწრება ვერ მოახერხე, შეხვედრის ჩანაწერი გუგლ კალენდარში შეგიძლია იპოვო.",
   },
-]
