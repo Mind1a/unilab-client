@@ -9,6 +9,12 @@ import interfaceCommunicationImage from "../assets/interface-communication-share
 import slideImg1 from "@features/landing/assets/slide-image-1.png"
 import slideImg2 from "@features/landing/assets/slide-image-2.png"
 
+export const heroData = [
+  { id: 1, text: "პროფესიული აქსელერაციის პროგრამა" },
+  { id: 2, text: "უნიკურსი" },
+  { id: 3, text: "შენი გზა ტექნოლოგიებში" },
+]
+
 export const uniCourseData = [
   {
     id: 1,
