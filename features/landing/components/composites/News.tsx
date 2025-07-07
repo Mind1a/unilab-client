@@ -37,7 +37,10 @@ function News() {
   }, [emblaApi])
 
   return (
-    <section className="mx-auto flex w-full max-w-[1104px] flex-col gap-22 py-60">
+    <section
+      id="news"
+      className="mx-auto flex w-full max-w-[1104px] flex-col gap-22 py-60"
+    >
       <div className="flex items-center justify-between">
         <h2 className="font-case text-center text-[48px] leading-14 font-black text-[#EDFAFF]">
           სიახლეები

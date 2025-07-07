@@ -1,6 +1,9 @@
 const AboutUs = () => {
   return (
-    <div className="mx-auto flex max-w-[1137px] flex-col px-4 py-12">
+    <div
+      id="aboutUs"
+      className="mx-auto flex max-w-[1137px] flex-col px-4 py-12"
+    >
       <div className="mx-auto flex flex-col">
         <h2 className="font-case mb-[32px] text-center text-[32px] font-[900] text-[#EDFAFF] md:mb-[88px] lg:text-left lg:text-[48px]">
           ჩვენ შესახებ

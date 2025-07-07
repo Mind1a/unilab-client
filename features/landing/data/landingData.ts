@@ -8,6 +8,8 @@ import interfaceCommunicationImage from "../assets/interface-communication-share
 // Slide images imports
 import slideImg1 from "@features/landing/assets/slide-image-1.png"
 import slideImg2 from "@features/landing/assets/slide-image-2.png"
+import Unicourse from "../components/composites/Unicourse"
+import { acceleratedValues } from "motion"
 
 export const uniCourseData = [
   {
@@ -160,5 +162,43 @@ export const Faqs: FaqProps[] = [
     question: "როგორ გავიგო ვინ არის ლექტორი და სად ვნახო კურსის სილაბუსი?",
     answer:
       "იმ შემთხვევაში, თუ პირველ გაერთიანებულ ლექციაზე დასწრება ვერ მოახერხე, შეხვედრის ჩანაწერი გუგლ კალენდარში შეგიძლია იპოვო.",
+  },
+]
+
+export const SideBarList = [
+  {
+    id: 1,
+    section: "/მთავარი",
+    href: "#main",
+  },
+  {
+    id: 2,
+    section: "/ჩვენ შესახებ ",
+    href: "#aboutUs",
+  },
+  {
+    id: 3,
+    section: "/უნიკურსი",
+    href: "#uniCourse",
+  },
+  {
+    id: 4,
+    section: "/აქსელერაცია",
+    href: "#accelerated",
+  },
+  {
+    id: 5,
+    section: "/სიახლეები",
+    href: "#news",
+  },
+  {
+    id: 6,
+    section: "/FAQ",
+    href: "#faq",
+  },
+  {
+    id: 7,
+    section: "/კონტაქტი",
+    href: "#contact",
   },
 ]
