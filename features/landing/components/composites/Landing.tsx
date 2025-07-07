@@ -6,7 +6,7 @@ import Unicourse from "./Unicourse"
 
 const Landing = () => {
   return (
-    <div>
+    <div className="flex flex-col items-end">
       <AboutUs />
       <Stats />
       <Acceleration />
