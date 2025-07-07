@@ -15,7 +15,7 @@ const Question = ({ title, children, id }: QuestionProps) => {
         onClick={() => setOpen((prev) => !prev)}
         className="mb-3 flex w-full cursor-pointer items-center justify-between gap-4 lg:mb-6"
       >
-        <div className="flex items-center gap-4 text-[#EDFAFF] lg:text-[#D4D4D4]">
+        <div className="flex items-center gap-4 text-[#D4D4D4]">
           <p className="text-[16px] font-normal lg:text-[24px] lg:font-medium">
             {id}
           </p>
