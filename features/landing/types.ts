@@ -1,3 +1,4 @@
+
 import { StaticImageData } from "next/image"
 
 export interface UniCourseCardProps {
@@ -9,4 +10,15 @@ export interface StatsProps {
   num: number
   text: string
   decimals?: number
+}
+
+export type QuestionProps = {
+  title: string
+  id: string
+  children: React.ReactNode
+}
+export type FaqProps = {
+  id: string
+  question: string
+  answer: string
 }
