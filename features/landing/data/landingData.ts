@@ -54,7 +54,7 @@ export const accelerationLinks: AccelerationLink[] = [
   { id: 5, label: "Python", href: "/" },
   { id: 6, label: "front-end (HTML, Css, js)", href: "/" },
   { id: 7, label: "ციფრული პროექტების მართვა", href: "/" },
-  ]
+]
 
 export const Faqs: FaqProps[] = [
   {
@@ -95,3 +95,4 @@ export const Faqs: FaqProps[] = [
     answer:
       "იმ შემთხვევაში, თუ პირველ გაერთიანებულ ლექციაზე დასწრება ვერ მოახერხე, შეხვედრის ჩანაწერი გუგლ კალენდარში შეგიძლია იპოვო.",
   },
+]
