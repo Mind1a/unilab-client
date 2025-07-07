@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col justify-between lg:flex-row">
+        <div className="flex flex-col justify-between 2xl:flex-row">
           <QueryProvider>
             <SideBar />
             {children}

@@ -43,3 +43,11 @@ export type FaqProps = {
   question: string
   answer: string
 }
+export type SideBarProps = {
+  id: string
+  src: string
+  alt: string
+  width: number
+  height: number
+  href?: string
+}
