@@ -1,15 +1,17 @@
 import AboutUs from "./AboutUs"
 import Acceleration from "./Acceleration"
+import Faq from "./Faq"
 import Stats from "./Stats"
 import Unicourse from "./Unicourse"
 
 const Landing = () => {
   return (
-    <div>
+    <div className="flex flex-col items-end">
       <AboutUs />
       <Stats />
       <Acceleration />
       <Unicourse />
+      <Faq />
     </div>
   )
 }
