@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const AboutUs = () => {
   return (
     <div className="mx-auto flex max-w-[1137px] flex-col px-4 py-12">
@@ -8,10 +10,12 @@ const AboutUs = () => {
 
         <div className="flex flex-col items-center lg:flex-row lg:items-center">
           <div className="max-W-[358px] mb-6 flex w-full justify-center lg:mb-0 lg:w-full lg:max-w-[466px] lg:justify-center">
-            <img
+            <Image
+              width={246}
+              height={308}
               src="Image.Unilab.svg"
               alt="Unilab Logo"
-              className="h-[308px] w-auto object-contain lg:w-[246px]"
+              className="w-auto object-contain lg:w-[246px]"
             />
           </div>
 
@@ -34,7 +38,7 @@ const AboutUs = () => {
         <div className="mt-[16px] flex justify-center lg:mt-[24px] lg:justify-end">
           <button className="flex w-[142px] items-center justify-center gap-2 rounded-[8px] border border-[#D4D4D4] px-[24px] py-[12px] text-[#D4D4D4] transition-all hover:bg-[#D4D4D4] hover:text-[#000000]">
             ვრცლად
-            <img src="Btn.Arrow.svg" alt="arrowUp" className="h-4 w-4" />
+            <Image src="Btn.Arrow.svg" alt="arrowUp" width={16} height={16} />
           </button>
         </div>
       </div>
