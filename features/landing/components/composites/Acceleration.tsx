@@ -11,7 +11,7 @@ const Acceleration = () => {
         {accelerationLinks.map((eachElement) => (
           <div
             key={eachElement.id}
-            className="flex items-center justify-center rounded-[24px] bg-[#0F0F10] px-6 py-3 text-[#D4D4D4] shadow-[0_0_8px2px#0080ff80] transition-all duration-500 hover:bg-[#0080ff]"
+            className="flex items-center justify-center rounded-[24px] bg-[#0F0F10] px-6 py-3 text-[#D4D4D4] shadow-[0_0_8px_2px_#0080ff80] transition-all duration-500 hover:bg-[#0080ff]"
           >
             <Link className="text-[18px] font-[900]" href={eachElement.href}>
               {eachElement.label}
