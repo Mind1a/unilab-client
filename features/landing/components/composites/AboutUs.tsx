@@ -1,8 +1,8 @@
 const AboutUs = () => {
   return (
-    <div className="flex flex-col bg-[#000000] px-4 py-12">
-      <div className="mx-auto flex max-w-[1137px] flex-col">
-        <h2 className="mb-[32px] text-center text-[32px] font-[900] text-[#EDFAFF] md:mb-[88px] lg:text-left lg:text-[48px]">
+    <div className="mx-auto flex max-w-[1137px] flex-col px-4 py-12">
+      <div className="mx-auto flex flex-col">
+        <h2 className="font-case mb-[32px] text-center text-[32px] font-[900] text-[#EDFAFF] md:mb-[88px] lg:text-left lg:text-[48px]">
           ჩვენ შესახებ
         </h2>
 
@@ -15,7 +15,7 @@ const AboutUs = () => {
             />
           </div>
 
-          <div className="flex flex-col text-justify text-[14px] leading-[24px] text-[#D4D4D4] lg:flex-1 lg:text-start">
+          <div className="font-case flex flex-col text-justify text-[14px] leading-[24px] font-medium text-[#D4D4D4] lg:flex-1 lg:text-start">
             <p>
               ოდესმე გიფიქრია პატარა ოთახზე, რომელში შესვლისას დროსა და სივრცეში
               იკარგები და საშუალება გეძლევა მომავლის გარკვეული ნაწილი დაინახო?
