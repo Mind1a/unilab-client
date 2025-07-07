@@ -2,20 +2,20 @@ const AboutUs = () => {
   return (
     <div className="flex flex-col bg-[#000000] px-4 py-12">
       <div className="mx-auto flex max-w-[1137px] flex-col">
-        <h2 className="mb-6 text-center text-[32px] font-[900] text-[#EDFAFF] lg:text-left lg:text-[48px]">
+        <h2 className="mb-[32px] text-center text-[32px] font-[900] text-[#EDFAFF] md:mb-[88px] lg:text-left lg:text-[48px]">
           ჩვენ შესახებ
         </h2>
 
-        <div className="flex flex-col items-center lg:flex-row lg:items-start">
-          <div className="W-[358px] mb-6 flex justify-center lg:mb-0 lg:w-full lg:max-w-[466px] lg:justify-start">
+        <div className="flex flex-col items-center lg:flex-row lg:items-center">
+          <div className="max-W-[358px] mb-6 flex w-full justify-center lg:mb-0 lg:w-full lg:max-w-[466px] lg:justify-center">
             <img
               src="Image.Unilab.svg"
               alt="Unilab Logo"
-              className="h-[308px] w-auto object-contain lg:mt-[58px] lg:w-[246px]"
+              className="h-[308px] w-auto object-contain lg:w-[246px]"
             />
           </div>
 
-          <div className="flex flex-col text-center text-[14px] leading-[24px] text-[#D4D4D4] lg:mt-[110px] lg:flex-1 lg:text-start">
+          <div className="flex flex-col text-justify text-[14px] leading-[24px] text-[#D4D4D4] lg:flex-1 lg:text-start">
             <p>
               ოდესმე გიფიქრია პატარა ოთახზე, რომელში შესვლისას დროსა და სივრცეში
               იკარგები და საშუალება გეძლევა მომავლის გარკვეული ნაწილი დაინახო?
