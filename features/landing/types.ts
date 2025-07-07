@@ -26,3 +26,20 @@ export type ArrowProps = {
   isDisabled: boolean
   direction: "left" | "right"
 }
+export type QuestionProps = {
+  title: string
+  id: string
+  children: React.ReactNode
+}
+
+export type AccelerationLink = {
+  id: number
+  label: string
+  href: string
+}
+
+export type FaqProps = {
+  id: string
+  question: string
+  answer: string
+}
