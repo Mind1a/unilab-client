@@ -109,7 +109,9 @@ export const newsData = [
     `,
     date: "მაი. 29 2024",
     href: "#",
+  },
 ]
+
 export const accelerationLinks: AccelerationLink[] = [
   { id: 1, label: "ციფრული მარკეტინგი", href: "/" },
   { id: 2, label: "გრაფიკული დიზაინი", href: "/" },
