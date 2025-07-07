@@ -1,11 +1,11 @@
 import { StaticImageData } from "next/image"
 
-export interface UniCourseCardProps {
+export type UniCourseCardProps = {
   title: string
   image: StaticImageData
 }
 
-export interface StatsProps {
+export type StatsProps = {
   num: number
   text: string
   decimals?: number
