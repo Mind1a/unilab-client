@@ -29,12 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col justify-between 2xl:flex-row">
-          <QueryProvider>
-            <SideBar />
-            {children}
-          </QueryProvider>
-        </div>
+        <QueryProvider>
+          <div className="flex min-h-screen flex-col 2xl:flex-row">
+            <aside className="shrink-0 2xl:w-[228px]">
+              <SideBar />
+            </aside>
+            <main className="w-full">{children}</main>
+          </div>
+        </QueryProvider>
       </body>
     </html>
   )
