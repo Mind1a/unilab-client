@@ -52,3 +52,8 @@ export type SideBarProps = {
 export type SideBarMenuProps = {
   CloseBurgerMenu?: () => void
 }
+export type LogoSizesProps = {
+  unilab: string
+  divider: string
+  iliauni: string
+}

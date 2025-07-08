@@ -8,9 +8,9 @@ export const logos: SideBarProps[] = [
     href: "https://unilab.iliauni.edu.ge/",
   },
   {
-    id: "divider",
+    id: "slash",
     src: "/HeaderIcon/slash.svg",
-    alt: "Divider Slash",
+    alt: "slash",
   },
   {
     id: "iliauni",

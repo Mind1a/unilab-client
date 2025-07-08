@@ -5,6 +5,13 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { AnimatePresence, motion } from "motion/react"
 import SideBarMenu from "./SideBarMenu"
+import { LogoSizesProps } from "@features/landing/types"
+
+const logoSizes: LogoSizesProps = {
+  unilab: "h-[32px] w-[24px] 2xl:h-[64px] 2xl:w-[50px]",
+  slash: "h-[48px] w-[13px] 2xl:h-[64px] 2xl:w-[16px]",
+  iliauni: "h-[32px] w-[32px] 2xl:h-[64px] 2xl:w-[64px]",
+}
 
 const SideBarHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -30,11 +37,11 @@ const SideBarHeader = () => {
   return (
     <div>
       <div className="relative z-[20] flex justify-between bg-[#090707] px-[24px] py-[30px] 2xl:py-12 2xl:pr-0 2xl:pl-12">
-        <div className="flex items-center">
+        <div className="flex items-center gap-x-3 2xl:gap-x-5">
           {logos.map((logo) => (
             <div
               key={logo.id}
-              className="relative h-[32px] w-[32px] 2xl:h-[64px] 2xl:w-[64px]"
+              className={`relative ${logoSizes[logo.id as "unilab" | "slash" | "iliauni"]}`}
             >
               {logo.href ? (
                 <Link href={logo.href}>
@@ -62,6 +69,7 @@ const SideBarHeader = () => {
           />
         </button>
       </div>
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
