@@ -49,3 +49,6 @@ export type SideBarProps = {
   alt: string
   href?: string
 }
+export type SideBarMenuProps = {
+  CloseBurgerMenu?: () => void
+}
