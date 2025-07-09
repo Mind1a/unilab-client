@@ -54,6 +54,18 @@ export type SideBarMenuProps = {
 }
 export type LogoSizesProps = {
   unilab: string
-  divider: string
+  slash: string
   iliauni: string
+}
+export type SectionNavItemProps = {
+  item: {
+    id: number
+    section: string
+    href: string
+  }
+  onClick?: () => void
+}
+export type HeaderIconProps = {
+  logo: SideBarProps
+  logoSizes: Record<string, string>
 }
