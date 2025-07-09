@@ -69,3 +69,7 @@ export type HeaderIconProps = {
   logo: SideBarProps
   logoSizes: Record<string, string>
 }
+export type BurgerMenuIconProps = {
+  isOpen: boolean
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+}

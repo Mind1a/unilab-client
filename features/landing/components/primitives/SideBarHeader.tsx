@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { AnimatePresence, motion } from "motion/react"
 import SideBarMenu from "./SideBarMenu"
 import HeaderIcons from "./HeaderIcons"
+import BurgerMenuIcon from "./BurgerMenuIcon"
 
 const SideBarHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -37,21 +38,9 @@ const SideBarHeader = () => {
             <HeaderIcons key={logo.id} logo={logo} logoSizes={logoSizes} />
           ))}
         </div>
-        <button
-          onClick={() => setIsOpen((prev) => !prev)}
-          className="cursor-pointer items-center justify-center 2xl:hidden"
-        >
-          <Image
-            src={
-              isOpen
-                ? "/HeaderIcon/CloseIcon.svg"
-                : "/HeaderIcon/BurgerMenu.svg"
-            }
-            alt={isOpen ? "BurgerMenuButton" : "CloseButton"}
-            width={32}
-            height={32}
-          />
-        </button>
+        <div className="flex cursor-pointer items-center justify-center 2xl:hidden">
+          <BurgerMenuIcon isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
       </div>
 
       <AnimatePresence>
