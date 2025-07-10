@@ -47,7 +47,7 @@ const SideBarHeader = () => {
         {isOpen && (
           <motion.div
             key="burger-menu"
-            className="fixed inset-0 z-[10] mt-[102px] w-screen overflow-y-auto bg-[#090707]"
+            className="fixed inset-0 z-[10] mt-[120px] w-screen overflow-y-auto bg-[#090707]"
             initial={{ y: "-100%" }}
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}

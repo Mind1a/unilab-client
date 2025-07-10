@@ -20,7 +20,7 @@ export const logos: SideBarProps[] = [
   },
 ]
 export const logoSizes: LogoSizesProps = {
-  unilab: "h-[32px] w-[24px] 2xl:h-[64px] 2xl:w-[50px]",
-  slash: "h-[48px] w-[13px] 2xl:h-[64px] 2xl:w-[16px]",
-  iliauni: "h-[32px] w-[32px] 2xl:h-[64px] 2xl:w-[64px]",
+  unilab: "h-[32px] w-[24px] md:h-[64px] md:w-[50px]",
+  slash: "h-[48px] w-[13px] md:h-[64px] md:w-[16px]",
+  iliauni: "h-[32px] w-[32px] md:h-[64px] md:w-[64px]",
 }
