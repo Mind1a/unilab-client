@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 
-const useHeightCheck = (screenHeight = 800): boolean => {
+const HeightCheck = (screenHeight = 800): boolean => {
   const [isShort, setIsShort] = useState(false)
 
   useEffect(() => {
@@ -17,4 +17,4 @@ const useHeightCheck = (screenHeight = 800): boolean => {
   return isShort
 }
 
-export default useHeightCheck
+export default HeightCheck

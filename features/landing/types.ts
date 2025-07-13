@@ -57,14 +57,6 @@ export type LogoSizesProps = {
   slash: string
   iliauni: string
 }
-export type SectionNavItemProps = {
-  item: {
-    id: number
-    section: string
-    href: string
-  }
-  onClick?: () => void
-}
 export type HeaderIconProps = {
   logo: SideBarProps
   logoSizes: Record<string, string>
@@ -72,4 +64,12 @@ export type HeaderIconProps = {
 export type BurgerMenuIconProps = {
   isOpen: boolean
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+export type SectionNavItemProps = {
+  item: {
+    section: string
+    href: string
+  }
+  onClick?: () => void
+  isActive?: boolean
 }

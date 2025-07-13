@@ -169,36 +169,36 @@ export const SideBarList = [
   {
     id: 1,
     section: "/მთავარი",
-    href: "#main",
+    href: "main",
   },
   {
     id: 2,
     section: "/ჩვენ შესახებ ",
-    href: "#aboutUs",
+    href: "aboutUs",
   },
   {
     id: 3,
     section: "/უნიკურსი",
-    href: "#uniCourse",
+    href: "uniCourse",
   },
   {
     id: 4,
     section: "/აქსელერაცია",
-    href: "#accelerated",
+    href: "accelerated",
   },
   {
     id: 5,
     section: "/სიახლეები",
-    href: "#news",
+    href: "news",
   },
   {
     id: 6,
     section: "/FAQ",
-    href: "#faq",
+    href: "faq",
   },
   {
     id: 7,
     section: "/კონტაქტი",
-    href: "#contact",
+    href: "contact",
   },
 ]
