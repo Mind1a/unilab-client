@@ -43,3 +43,33 @@ export type FaqProps = {
   question: string
   answer: string
 }
+export type SideBarProps = {
+  id: string
+  src: string
+  alt: string
+  href?: string
+}
+export type SideBarMenuProps = {
+  CloseBurgerMenu?: () => void
+}
+export type LogoSizesProps = {
+  unilab: string
+  slash: string
+  iliauni: string
+}
+export type HeaderIconProps = {
+  logo: SideBarProps
+  logoSizes: Record<string, string>
+}
+export type BurgerMenuIconProps = {
+  isOpen: boolean
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+export type SectionNavItemProps = {
+  item: {
+    section: string
+    href: string
+  }
+  onClick?: () => void
+  isActive?: boolean
+}
