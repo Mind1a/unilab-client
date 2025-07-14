@@ -7,9 +7,9 @@ const HeroTop = ({
 }) => {
   return (
     <div className="flex items-center justify-between">
-      <span className="text-8xl font-black">{`0${selectedIndex + 1}`}</span>
+      <span className="text-5xl font-black md:text-8xl">{`0${selectedIndex + 1}`}</span>
       <button
-        className="h-[63px] w-[74px] cursor-pointer bg-[url(/Arrow.png)]"
+        className="h-[38px] w-[42px] cursor-pointer bg-[url(/Arrow.png)] bg-cover md:h-[63px] md:w-[74px]"
         onClick={scrollToArrow}
       />
     </div>

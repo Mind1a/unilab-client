@@ -8,8 +8,8 @@ const HeroSlider = ({ emblaRef }: { emblaRef: EmblaViewportRefType }) => {
       <div className="embla__container">
         {heroData.map((item) => (
           <div key={item.id} className="embla__slide">
-            <div className="flex flex-col items-end gap-12">
-              <button className="flex cursor-pointer items-center gap-1 rounded-lg bg-[#0080FF] px-6 py-3">
+            <div className="flex flex-col items-end gap-6 md:gap-12">
+              <button className="flex cursor-pointer items-center gap-1 rounded-md bg-[#0080FF] px-6 py-3">
                 დარეგისტრირდი
                 <Image
                   src="/Btn.Arrow.svg"
@@ -18,7 +18,7 @@ const HeroSlider = ({ emblaRef }: { emblaRef: EmblaViewportRefType }) => {
                   height={16}
                 />
               </button>
-              <p className="font-case text-right text-8xl font-black">
+              <p className="font-case text-right text-[32px] font-black md:text-5xl lg:text-8xl">
                 {item.text}
               </p>
             </div>
