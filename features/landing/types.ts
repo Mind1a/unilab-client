@@ -73,3 +73,15 @@ export type SectionNavItemProps = {
   onClick?: () => void
   isActive?: boolean
 }
+
+export type ourProjectSlideProps = {
+  id?: number
+  img: StaticImageData
+  title: string
+  href?: string
+}
+
+export type EmblaOptions = {
+  loop?: boolean
+  skipSnaps?: boolean
+}
