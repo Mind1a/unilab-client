@@ -1,5 +1,5 @@
-import { newsData } from "@features/landing/data/landingData"
 import NewsCard from "@features/landing/components/primitives/NewsCard"
+import { newsData } from "@features/landing/data/landingData"
 import { EmblaViewportRefType } from "embla-carousel-react"
 
 function NewsCarousel({ ref }: { ref?: EmblaViewportRefType }) {

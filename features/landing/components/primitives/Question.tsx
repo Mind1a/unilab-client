@@ -1,9 +1,12 @@
 "use client"
-import { motion } from "motion/react"
-import Image from "next/image"
-import useMeasure from "react-use-measure"
-import { QuestionProps } from "@features/landing/types"
+
 import { useState } from "react"
+
+import Image from "next/image"
+
+import { QuestionProps } from "@features/landing/types"
+import { motion } from "motion/react"
+import useMeasure from "react-use-measure"
 
 const Question = ({ title, children, id }: QuestionProps) => {
   const [ref, { height }] = useMeasure()

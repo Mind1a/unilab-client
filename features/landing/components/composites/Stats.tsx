@@ -1,4 +1,5 @@
 import { statsData } from "@features/landing/data/landingData"
+
 import StatsUnit from "../primitives/StatsUnit"
 
 const Stats = () => {

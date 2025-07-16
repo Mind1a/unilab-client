@@ -1,7 +1,8 @@
 "use client"
 
-import { StatsProps } from "@features/landing/types"
 import { useEffect, useRef, useState } from "react"
+
+import { StatsProps } from "@features/landing/types"
 import { animate, useInView } from "motion/react"
 
 const StatsUnit = ({ num, text, decimals = 0 }: StatsProps) => {

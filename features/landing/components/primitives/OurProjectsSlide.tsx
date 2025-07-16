@@ -1,5 +1,6 @@
-import type { ourProjectSlideProps } from "@features/landing/types"
 import Image from "next/image"
+
+import type { ourProjectSlideProps } from "@features/landing/types"
 
 function OurProjectsSlide({ img, title }: ourProjectSlideProps) {
   return (

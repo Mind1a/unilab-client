@@ -1,7 +1,8 @@
-import blueShapeSvg from "@features/landing/assets/blue-shape.svg"
 import Image from "next/image"
-import type { UniCourseCardProps } from "@features/landing/types"
 import Link from "next/link"
+
+import blueShapeSvg from "@features/landing/assets/blue-shape.svg"
+import type { UniCourseCardProps } from "@features/landing/types"
 
 const UnicourseCard = ({ title, image }: UniCourseCardProps) => {
   return (

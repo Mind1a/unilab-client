@@ -1,6 +1,8 @@
 import React from "react"
-import type { NewsCardProps } from "@features/landing/types"
+
 import Link from "next/link"
+
+import type { NewsCardProps } from "@features/landing/types"
 
 function NewsCard({ item }: { item: NewsCardProps }) {
   return (

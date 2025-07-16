@@ -1,9 +1,11 @@
 "use client"
+
+import HeightStyles from "@features/landing/components/primitives/HeightStyles"
 import { SideBarList } from "@features/landing/data/landingData"
 import { SideBarMenuProps } from "@features/landing/types"
-import SectionNavItem from "./SectionNavItem"
+
 import ScrollTracking from "./ScrollTracking"
-import HeightStyles from "@features/landing/components/primitives/HeightStyles"
+import SectionNavItem from "./SectionNavItem"
 
 const SideBarMenu = ({ CloseBurgerMenu }: SideBarMenuProps) => {
   const sectionIds = SideBarList.map((item) => item.href)

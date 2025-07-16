@@ -1,17 +1,18 @@
-import { AccelerationLink } from "../types"
-import { FaqProps } from "../types"
-import python from "../assets/python.png"
-import frontEndImage from "../assets/front-end.png"
-import ictImage from "../assets/ict.png"
-import graphicDesignImage from "../assets/graphic-design.png"
-import interfaceCommunicationImage from "../assets/interface-communication-shared.png"
+import ourProjectSlide from "@features/landing/assets/project-slide-image.png"
 // Slide images imports
 import slideImg1 from "@features/landing/assets/slide-image-1.png"
 import slideImg2 from "@features/landing/assets/slide-image-2.png"
-import Unicourse from "../components/composites/Unicourse"
 import { acceleratedValues } from "motion"
 
-import ourProjectSlide from "@features/landing/assets/project-slide-image.png"
+import frontEndImage from "../assets/front-end.png"
+import graphicDesignImage from "../assets/graphic-design.png"
+import ictImage from "../assets/ict.png"
+import interfaceCommunicationImage from "../assets/interface-communication-shared.png"
+import python from "../assets/python.png"
+import Unicourse from "../components/composites/Unicourse"
+import { AccelerationLink } from "../types"
+import { FaqProps } from "../types"
+
 export const heroData = [
   { id: 1, text: "პროფესიული აქსელერაციის პროგრამა" },
   { id: 2, text: "უნიკურსი" },
