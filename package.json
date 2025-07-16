@@ -15,10 +15,12 @@
   "dependencies": {
     "@tanstack/react-query": "^5.81.5",
     "@tanstack/react-query-devtools": "^5.81.5",
-    "motion": "^12.19.2",
+    "embla-carousel-react": "^8.6.0",
+    "motion": "^12.23.0",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-use-measure": "^2.1.7",
     "root": "git+https://github.com/tanstack/react-query.git"
   },
   "devDependencies": {

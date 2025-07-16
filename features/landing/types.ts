@@ -1,12 +1,87 @@
 import { StaticImageData } from "next/image"
 
-export interface UniCourseCardProps {
+export type UniCourseCardProps = {
   title: string
   image: StaticImageData
 }
 
-export interface StatsProps {
+export type StatsProps = {
   num: number
   text: string
   decimals?: number
+}
+
+export type NewsCardProps = {
+  id: number
+  image: {
+    src: string
+  }
+  title: string
+  paragraph: string
+  date: string
+  href: string
+}
+
+export type ArrowProps = {
+  isDisabled: boolean
+  direction: "left" | "right"
+}
+export type QuestionProps = {
+  title: string
+  id: string
+  children: React.ReactNode
+}
+
+export type AccelerationLink = {
+  id: number
+  label: string
+  href: string
+}
+
+export type FaqProps = {
+  id: string
+  question: string
+  answer: string
+}
+export type SideBarProps = {
+  id: string
+  src: string
+  alt: string
+  href?: string
+}
+export type SideBarMenuProps = {
+  CloseBurgerMenu?: () => void
+}
+export type LogoSizesProps = {
+  unilab: string
+  slash: string
+  iliauni: string
+}
+export type HeaderIconProps = {
+  logo: SideBarProps
+  logoSizes: Record<string, string>
+}
+export type BurgerMenuIconProps = {
+  isOpen: boolean
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+export type SectionNavItemProps = {
+  item: {
+    section: string
+    href: string
+  }
+  onClick?: () => void
+  isActive?: boolean
+}
+
+export type ourProjectSlideProps = {
+  id?: number
+  img: StaticImageData
+  title: string
+  href?: string
+}
+
+export type EmblaOptions = {
+  loop?: boolean
+  skipSnaps?: boolean
 }
