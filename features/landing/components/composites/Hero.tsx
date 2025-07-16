@@ -38,9 +38,9 @@ export const Hero = () => {
   }
 
   return (
-    <section className="m-auto mt-36 flex min-h-screen max-w-[1152px] flex-col gap-[138px] pr-12 pl-9">
+    <section className="mx-auto mt-6 flex min-h-[582px] w-full max-w-[1152px] flex-col justify-between pr-4 pl-4 md:mt-36 md:min-h-screen md:justify-normal md:gap-[138px] md:pr-12 md:pl-9">
       <HeroTop selectedIndex={selectedIndex} scrollToArrow={scrollToArrow} />
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-6 md:gap-16">
         <HeroSlider emblaRef={emblaRef} />
         <Bullets
           scrollToBullet={scrollToBullet}

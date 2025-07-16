@@ -13,7 +13,7 @@ const Bullets = ({
         <button
           key={item.id}
           onClick={() => scrollToBullet(index)}
-          className={`cursor-pointer rounded-full p-1.5 ${
+          className={`cursor-pointer rounded-full p-1 md:p-1.5 ${
             index === selectedIndex ? "bg-gray-300" : "bg-neutral-800"
           }`}
         />
