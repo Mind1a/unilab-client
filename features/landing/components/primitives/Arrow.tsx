@@ -4,7 +4,7 @@ function Arrow({ isDisabled, direction }: ArrowProps) {
   const color = isDisabled ? "#3B3B3E" : "#D4D4D4"
   return (
     <svg
-      className={`transform ${direction === "right" ? "rotate-180" : ""} cursor-pointer`}
+      className={`transform ${direction === "right" ? "rotate-180" : ""} h-6 w-6 cursor-pointer md:h-[34px] md:w-[35px]`}
       xmlns="http://www.w3.org/2000/svg"
       width="35"
       height="34"

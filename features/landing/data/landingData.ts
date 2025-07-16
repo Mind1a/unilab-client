@@ -11,6 +11,7 @@ import slideImg2 from "@features/landing/assets/slide-image-2.png"
 import Unicourse from "../components/composites/Unicourse"
 import { acceleratedValues } from "motion"
 
+import ourProjectSlide from "@features/landing/assets/project-slide-image.png"
 export const heroData = [
   { id: 1, text: "პროფესიული აქსელერაციის პროგრამა" },
   { id: 2, text: "უნიკურსი" },
@@ -206,5 +207,38 @@ export const SideBarList = [
     id: 7,
     section: "/კონტაქტი",
     href: "contact",
+  },
+]
+
+export const ourProjectsData = [
+  {
+    id: 1,
+    img: ourProjectSlide,
+    title: "ფინალური პროექტი ფინალური",
+    href: "#",
+  },
+  {
+    id: 2,
+    img: ourProjectSlide,
+    title: "ფინალური პროექტი ფინალური",
+    href: "#",
+  },
+  {
+    id: 3,
+    img: ourProjectSlide,
+    title: "ფინალური პროექტი ფინალური",
+    href: "#",
+  },
+  {
+    id: 4,
+    img: ourProjectSlide,
+    title: "ფინალური პროექტი ფინალური",
+    href: "#",
+  },
+  {
+    id: 5,
+    img: ourProjectSlide,
+    title: "ფინალური პროექტი ფინალური",
+    href: "#",
   },
 ]
