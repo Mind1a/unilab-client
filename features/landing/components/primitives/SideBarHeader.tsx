@@ -32,7 +32,7 @@ const SideBarHeader = () => {
 
   return (
     <div>
-      <div className="relative z-[20] flex justify-between bg-[#090707] px-[24px] py-[30px] 2xl:py-12 2xl:pr-0 2xl:pl-12">
+      <div className="relative z-[20] flex justify-between bg-[#090707] px-[24px] py-[15px] 2xl:py-12 2xl:pr-0 2xl:pl-12">
         <div className="flex items-center gap-x-3 2xl:gap-x-5">
           {logos.map((logo) => (
             <HeaderIcons key={logo.id} logo={logo} logoSizes={logoSizes} />
@@ -47,7 +47,7 @@ const SideBarHeader = () => {
         {isOpen && (
           <motion.div
             key="burger-menu"
-            className="fixed inset-0 z-[10] mt-[120px] w-screen overflow-y-auto bg-[#090707]"
+            className="fixed inset-0 z-[10] mt-[78px] w-screen overflow-y-auto bg-[#090707] 2xl:mt-[120px]"
             initial={{ y: "-100%" }}
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
