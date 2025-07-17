@@ -9,7 +9,7 @@ import OurProjects from "@features/landing/components/composites/OurProjects"
 
 const Landing = () => {
   return (
-    <div className="flex flex-col items-end">
+    <div className="flex flex-col items-end gap-22 md:mt-36 md:mb-[98px] md:gap-[240px]">
       <Hero />
       <AboutUs />
       <OurProjects />
