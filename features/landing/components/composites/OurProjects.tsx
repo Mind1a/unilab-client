@@ -10,7 +10,7 @@ function OurProjects() {
     useEmblaControls({ skipSnaps: true })
 
   return (
-    <section className="mx-auto flex w-full max-w-[1104px] flex-col gap-6 pt-22 md:gap-12 md:pt-60">
+    <section className="mx-auto flex w-full max-w-[1104px] flex-col gap-6 md:gap-12">
       <div className="mb-[8px] flex items-center justify-between md:mb-10">
         <h2 className="font-case text-center text-2xl leading-8 font-black text-[#EDFAFF] md:text-5xl md:leading-14">
           პროექტები
@@ -35,12 +35,8 @@ function OurProjects() {
       <div className="overflow-x-hidden p-1" ref={emblaRef}>
         <div className="flex gap-12 md:px-2">
           {ourProjectsData.map((item) => (
-            <Link href={item.href}>
-              <OurProjectsSlide
-                key={item.id}
-                img={item.img}
-                title={item.title}
-              />
+            <Link href={item.href} key={item.id}>
+              <OurProjectsSlide img={item.img} title={item.title} />
             </Link>
           ))}
         </div>
