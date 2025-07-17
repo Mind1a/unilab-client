@@ -30,11 +30,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <QueryProvider>
-          <div className="flex min-h-screen flex-col 2xl:flex-row">
-            <aside className="shrink-0 2xl:w-[228px]">
+          <div className="m-auto flex min-h-screen w-full max-w-[1440px] flex-col justify-between px-4 md:flex-row md:gap-6 md:px-8 xl:px-12">
+            <aside className="h-[80px] shrink-0 md:w-[210px]">
               <SideBar />
             </aside>
-            <main className="w-full">{children}</main>
+            <main className="w-full md:max-w-[calc(100%-210px-36px)]">
+              {children}
+            </main>
           </div>
         </QueryProvider>
       </body>
