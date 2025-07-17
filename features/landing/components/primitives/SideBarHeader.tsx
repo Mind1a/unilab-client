@@ -12,7 +12,7 @@ const SideBarHeader = () => {
 
   useEffect(() => {
     const onResize = () => {
-      if (window.innerWidth >= 1536) setIsOpen(false)
+      if (window.innerWidth >= 768) setIsOpen(false)
     }
 
     window.addEventListener("resize", onResize)
@@ -31,14 +31,14 @@ const SideBarHeader = () => {
   }, [isOpen])
 
   return (
-    <div>
-      <div className="relative z-[20] flex justify-between bg-[#090707] px-[24px] py-[15px] 2xl:py-12 2xl:pr-0 2xl:pl-12">
-        <div className="flex items-center gap-x-3 2xl:gap-x-5">
+    <div className="">
+      <div className="relative z-[20] flex justify-between bg-[#090707] py-[15px] md:py-12">
+        <div className="flex items-center gap-x-3 md:gap-x-5">
           {logos.map((logo) => (
             <HeaderIcons key={logo.id} logo={logo} logoSizes={logoSizes} />
           ))}
         </div>
-        <div className="flex cursor-pointer items-center justify-center 2xl:hidden">
+        <div className="flex cursor-pointer items-center justify-center md:hidden">
           <BurgerMenuIcon isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </div>
