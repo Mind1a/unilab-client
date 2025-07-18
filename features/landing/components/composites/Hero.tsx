@@ -1,7 +1,9 @@
 "use client"
 
-import useEmblaCarousel from "embla-carousel-react"
 import { useEffect, useState } from "react"
+
+import useEmblaCarousel from "embla-carousel-react"
+
 import Bullets from "../primitives/Bullets"
 import HeroSlider from "../primitives/HeroSlider"
 import HeroTop from "../primitives/HeroTop"

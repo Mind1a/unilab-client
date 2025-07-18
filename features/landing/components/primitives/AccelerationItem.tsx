@@ -1,5 +1,6 @@
-import { AccelerationLink } from "@features/landing/types"
 import Link from "next/link"
+
+import { AccelerationLink } from "@features/landing/types"
 
 const AccelerationItem = ({ id, label, href }: AccelerationLink) => {
   return (

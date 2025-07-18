@@ -1,6 +1,8 @@
-import { useState, useEffect, useCallback } from "react"
-import useEmblaCarousel from "embla-carousel-react"
+import { useCallback, useEffect, useState } from "react"
+
 import type { EmblaOptions } from "@features/landing/types"
+import useEmblaCarousel from "embla-carousel-react"
+
 function useEmblaControls(
   options: EmblaOptions = { loop: false, skipSnaps: false }
 ) {

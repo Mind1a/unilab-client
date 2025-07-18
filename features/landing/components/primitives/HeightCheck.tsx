@@ -1,5 +1,6 @@
 "use client"
-import { useState, useEffect } from "react"
+
+import { useEffect, useState } from "react"
 
 const HeightCheck = (screenHeight = 800): boolean => {
   const [isShort, setIsShort] = useState(false)

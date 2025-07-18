@@ -1,9 +1,11 @@
 "use client"
+
+import Link from "next/link"
+
 import Arrow from "@features/landing/components/primitives/Arrow"
 import OurProjectsSlide from "@features/landing/components/primitives/OurProjectsSlide"
 import { ourProjectsData } from "@features/landing/data/landingData"
 import useEmblaControls from "@features/landing/hooks/useEmblaControls"
-import Link from "next/link"
 
 function OurProjects() {
   const { emblaRef, prevDisabled, nextDisabled, scrollNext, scrollPrev } =

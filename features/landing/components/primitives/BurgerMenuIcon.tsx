@@ -1,4 +1,5 @@
 "use client"
+
 import { BurgerMenuIconProps } from "@features/landing/types"
 import { motion } from "motion/react"
 

@@ -1,11 +1,13 @@
 "use client"
-import { logos, logoSizes } from "@features/landing/data/sideBarData"
-import Image from "next/image"
+
 import { useEffect, useState } from "react"
+
+import { logoSizes, logos } from "@features/landing/data/sideBarData"
 import { AnimatePresence, motion } from "motion/react"
-import SideBarMenu from "./SideBarMenu"
-import HeaderIcons from "./HeaderIcons"
+
 import BurgerMenuIcon from "./BurgerMenuIcon"
+import HeaderIcons from "./HeaderIcons"
+import SideBarMenu from "./SideBarMenu"
 
 const SideBarHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
