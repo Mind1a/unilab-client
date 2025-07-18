@@ -38,7 +38,7 @@ export const Hero = () => {
   }
 
   return (
-    <section className="mx-auto mt-6 flex min-h-[582px] w-full max-w-[1152px] flex-col justify-between pr-4 pl-4 md:mt-36 md:min-h-screen md:justify-normal md:gap-[138px] md:pr-12 md:pl-9">
+    <section className="flex min-h-[582px] w-full flex-col justify-between md:justify-normal md:gap-[138px]">
       <HeroTop selectedIndex={selectedIndex} scrollToArrow={scrollToArrow} />
       <div className="flex flex-col gap-6 md:gap-16">
         <HeroSlider emblaRef={emblaRef} />

@@ -1,23 +1,26 @@
+// Types imports
 import { AccelerationLink } from "../types"
 import { FaqProps } from "../types"
+// Unicourse section images imports
 import python from "../assets/python.png"
 import frontEndImage from "../assets/front-end.png"
 import ictImage from "../assets/ict.png"
 import graphicDesignImage from "../assets/graphic-design.png"
 import interfaceCommunicationImage from "../assets/interface-communication-shared.png"
-// Slide images imports
+// News section slide images imports
 import slideImg1 from "@features/landing/assets/slide-image-1.png"
 import slideImg2 from "@features/landing/assets/slide-image-2.png"
-import Unicourse from "../components/composites/Unicourse"
-import { acceleratedValues } from "motion"
-
+// Our projects section slide image import
 import ourProjectSlide from "@features/landing/assets/project-slide-image.png"
+
+// Hero section data
 export const heroData = [
   { id: 1, text: "პროფესიული აქსელერაციის პროგრამა" },
   { id: 2, text: "უნიკურსი" },
   { id: 3, text: "შენი გზა ტექნოლოგიებში" },
 ]
 
+// Unicourse section data
 export const uniCourseData = [
   {
     id: 1,
@@ -51,6 +54,7 @@ export const uniCourseData = [
   },
 ]
 
+// Stats section data
 export const statsData = [
   { num: 61, text: "კურსი" },
   { num: 240, text: "სტაჟიორი" },
@@ -58,6 +62,7 @@ export const statsData = [
   { num: 835, text: "სერტიფიკატი" },
 ]
 
+// News section data
 export const newsData = [
   {
     id: 1,
@@ -121,6 +126,7 @@ export const newsData = [
   },
 ]
 
+// Acceleration links data
 export const accelerationLinks: AccelerationLink[] = [
   { id: 1, label: "ციფრული მარკეტინგი", href: "/" },
   { id: 2, label: "გრაფიკული დიზაინი", href: "/" },
@@ -131,6 +137,7 @@ export const accelerationLinks: AccelerationLink[] = [
   { id: 7, label: "ციფრული პროექტების მართვა", href: "/" },
 ]
 
+// FAQ section data
 export const Faqs: FaqProps[] = [
   {
     id: "01",
@@ -172,6 +179,7 @@ export const Faqs: FaqProps[] = [
   },
 ]
 
+// Sidebar list data
 export const SideBarList = [
   {
     id: 1,
@@ -210,6 +218,7 @@ export const SideBarList = [
   },
 ]
 
+// Our projects section data
 export const ourProjectsData = [
   {
     id: 1,
