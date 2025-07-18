@@ -5,10 +5,7 @@ import { FaqProps } from "@features/landing/types"
 
 const Faq = () => {
   return (
-    <div
-      id="faq"
-      className="m-auto w-full max-w-[1152px] space-y-6 px-[26px] lg:space-y-22 lg:pr-12 lg:pl-9"
-    >
+    <div id="faq" className="space-y-6 lg:space-y-22">
       <div className="space-y-4 lg:space-y-6">
         <h2 className="text-[24px] font-black text-[#EDFAFF] lg:ml-0 lg:text-[48px]">
           FAQ

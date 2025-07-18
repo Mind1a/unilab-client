@@ -4,7 +4,7 @@ const Unicourse = () => {
   return (
     <section
       id="uniCourse"
-      className="mx-auto flex w-full max-w-[1104px] flex-col gap-[48px] px-[31px] md:gap-[88px] md:px-[18px] md:pl-9"
+      className="flex w-full flex-col gap-[48px] md:gap-[88px] md:px-[18px]"
     >
       <h2 className="font-case text-center text-[32px] leading-[56px] font-black text-[#EDFAFF] sm:text-[32px] md:text-5xl">
         უნიკურსი

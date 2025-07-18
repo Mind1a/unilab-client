@@ -3,10 +3,7 @@ import AccelerationItem from "../primitives/AccelerationItem"
 
 const Acceleration = () => {
   return (
-    <div
-      id="accelerated"
-      className="mx-auto flex max-w-[1098px] flex-col items-center"
-    >
+    <section id="accelerated" className="flex w-full flex-col items-center">
       <h2 className="font- mb-[88px] text-center text-[48px] font-[900]">
         აქსელერაცია
       </h2>
@@ -20,7 +17,7 @@ const Acceleration = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
