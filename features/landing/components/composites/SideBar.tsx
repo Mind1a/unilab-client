@@ -3,7 +3,7 @@ import SideBarMenu from "../primitives/SideBarMenu"
 
 const SideBar = () => {
   return (
-    <div className="fixed z-[200] w-[calc(100%-16px-16px)] bg-[#090707] md:w-full">
+    <div className="fixed left-0 z-[200] w-full bg-[#090707] md:left-auto md:w-full">
       <div className="md:fixed">
         <SideBarHeader />
         <div className="hidden md:flex">
