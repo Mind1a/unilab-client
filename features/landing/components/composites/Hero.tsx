@@ -7,7 +7,7 @@ import HeroSlider from "../primitives/HeroSlider"
 import HeroTop from "../primitives/HeroTop"
 
 export const Hero = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel()
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
   const [selectedIndex, setSelectedIndex] = useState(0)
 
   useEffect(() => {
@@ -37,8 +37,31 @@ export const Hero = () => {
     else emblaApi.scrollTo(0)
   }
 
+  useEffect(() => {
+    if (!emblaApi) return
+    let timeout: NodeJS.Timeout
+
+    const autoScroll = () => {
+      clearTimeout(timeout)
+      timeout = setTimeout(() => {
+        emblaApi.scrollNext()
+      }, 5000)
+    }
+
+    emblaApi.on("select", autoScroll)
+    autoScroll()
+
+    return () => {
+      clearTimeout(timeout)
+      emblaApi.off("select", autoScroll)
+    }
+  }, [emblaApi])
+
   return (
-    <section className="flex min-h-[582px] w-full flex-col justify-between md:justify-normal md:gap-[138px]">
+    <section
+      id="main"
+      className="flex min-h-[582px] w-full flex-col justify-between md:justify-normal md:gap-[138px]"
+    >
       <HeroTop selectedIndex={selectedIndex} scrollToArrow={scrollToArrow} />
       <div className="flex flex-col gap-6 md:gap-16">
         <HeroSlider emblaRef={emblaRef} />
