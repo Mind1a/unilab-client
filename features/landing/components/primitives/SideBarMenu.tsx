@@ -35,7 +35,7 @@ const SideBarMenu = ({ CloseBurgerMenu }: SideBarMenuProps) => {
   } = HeightStyles()
 
   return (
-    <div className="w-full max-w-[228px] 2xl:pr-0">
+    <div className="w-full max-w-[228px] px-4 md:px-0 2xl:pr-0">
       <div className="flex items-center gap-[24px]">
         <div
           className="relative w-[2px] flex-shrink-0 blur-[1px] filter"
