@@ -10,7 +10,10 @@ function OurProjects() {
     useEmblaControls({ skipSnaps: true })
 
   return (
-    <section className="mx-auto flex w-full max-w-[1104px] flex-col gap-6 md:gap-12">
+    <section
+      id="projects"
+      className="mx-auto flex w-full max-w-[1104px] flex-col gap-6 md:gap-12"
+    >
       <div className="mb-[8px] flex items-center justify-between md:mb-10">
         <h2 className="font-case text-center text-2xl leading-8 font-black text-[#EDFAFF] md:text-5xl md:leading-14">
           პროექტები
