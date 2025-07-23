@@ -1,3 +1,4 @@
+import { BtnArrow } from "@features/landing/assets/icons/index"
 const AboutUs = () => {
   return (
     <div id="aboutUs" className="flex flex-col">
@@ -32,9 +33,12 @@ const AboutUs = () => {
         </div>
 
         <div className="mt-[16px] flex justify-center lg:mt-[24px] lg:justify-end">
-          <button className="flex w-[142px] items-center justify-center gap-2 rounded-[8px] border border-[#D4D4D4] px-[24px] py-[12px] text-[#D4D4D4] transition-all hover:bg-[#D4D4D4] hover:text-[#000000]">
+          <button className="group flex cursor-pointer items-center justify-center gap-2 rounded-[8px] border border-[#D4D4D4] px-6 py-3 text-[#D4D4D4] transition-colors hover:bg-[#D4D4D4] hover:text-black">
             ვრცლად
-            <img src="Btn.Arrow.svg" alt="arrowUp" className="h-4 w-4" />
+            <BtnArrow
+              alt="arrowUp"
+              className="h-4 w-4 transition-colors group-hover:[&>path]:fill-black"
+            />
           </button>
         </div>
       </div>
