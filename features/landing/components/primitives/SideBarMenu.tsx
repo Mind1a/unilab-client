@@ -46,7 +46,7 @@ const SideBarMenu = ({ CloseBurgerMenu }: SideBarMenuProps) => {
           }}
         >
           <div
-            className="absolute left-0 mt-[40px] h-[60px] w-[2px] rounded-full transition-all duration-300 ease-in-out"
+            className="absolute left-0 w-[2px] rounded-full transition-all duration-300 ease-in-out"
             style={{
               top: `${getIndicatorPosition()}px`,
               opacity: activeSection ? 1 : 0,
