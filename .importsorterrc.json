@@ -1,0 +1,9 @@
+{
+  "groups": [
+    ["^react", "^next"],
+    ["^@?\\w"],
+    ["^(@|components|utils|hooks|styles|assets)(/.*|$)"],
+    ["^\\./"],
+    ["^\\../"]
+  ]
+}
