@@ -1,8 +1,9 @@
 "use client"
 
-import { StatsProps } from "@features/landing/types"
-import { useEffect, useRef, useState } from "react"
 import { animate, useInView } from "motion/react"
+import { useEffect, useRef, useState } from "react"
+
+import { StatsProps } from "@features/landing/types"
 
 const StatsUnit = ({ num, text, decimals = 0 }: StatsProps) => {
   const ref = useRef<HTMLDivElement | null>(null)

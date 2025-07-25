@@ -1,5 +1,5 @@
-import { SectionNavItemProps } from "@features/landing/types"
 import Link from "next/link"
+import { SectionNavItemProps } from "@features/landing/types"
 
 const SectionNavItem = ({
   item,

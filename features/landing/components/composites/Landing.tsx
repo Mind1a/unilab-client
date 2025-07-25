@@ -1,11 +1,11 @@
-import News from "@features/landing/components/composites/News"
 import AboutUs from "./AboutUs"
 import Acceleration from "./Acceleration"
 import Faq from "./Faq"
+import Hero from "./Hero"
+import News from "@features/landing/components/composites/News"
+import OurProjects from "@features/landing/components/composites/OurProjects"
 import Stats from "./Stats"
 import Unicourse from "./Unicourse"
-import Hero from "./Hero"
-import OurProjects from "@features/landing/components/composites/OurProjects"
 
 const Landing = () => {
   return (

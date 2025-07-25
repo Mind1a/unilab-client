@@ -1,5 +1,5 @@
-import { uniCourseData } from "@features/landing/data/landingData"
 import UnicourseCard from "@features/landing/components/primitives/UnicourseCard"
+import { uniCourseData } from "@features/landing/data/landingData"
 const Unicourse = () => {
   return (
     <section

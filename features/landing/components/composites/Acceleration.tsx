@@ -1,5 +1,5 @@
-import { accelerationLinks } from "@features/landing/data/landingData"
 import AccelerationItem from "../primitives/AccelerationItem"
+import { accelerationLinks } from "@features/landing/data/landingData"
 
 const Acceleration = () => {
   return (

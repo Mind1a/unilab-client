@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write . && import-sorter --write .",
+    "format": "prettier --write . && import-sort --write **/*.{js,jsx,ts,tsx} --style custom",
     "format:check": "prettier --check .",
     "clean": "rimraf .next && rimraf node_modules && pnpm install",
     "typecheck": "tsc --noEmit"
@@ -33,9 +33,11 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
     "eslint-config-prettier": "^10.1.5",
-    "import-sorter": "1.0.0-alpha.6",
+    "import-sort-cli": "^6.0.0",
+    "import-sort-style-custom": "^2.1.2",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.13",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

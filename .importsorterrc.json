@@ -1,9 +1,15 @@
 {
-  "groups": [
-    ["^react", "^next"],
-    ["^@?\\w"],
-    ["^(@|components|utils|hooks|styles|assets)(/.*|$)"],
-    ["^\\./"],
-    ["^\\../"]
-  ]
+  ".js, .jsx, .ts, .tsx": {
+    "style": "custom",
+    "parser": "ts",
+    "options": {
+      "groups": [
+        ["^react$"],
+        ["^next"],
+        ["<THIRD_PARTY_MODULES>"],
+        ["^@/"],
+        ["^[./]"]
+      ]
+    }
+  }
 }

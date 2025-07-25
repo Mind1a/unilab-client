@@ -1,8 +1,10 @@
 "use client"
+
+import { useCallback, useEffect, useState } from "react"
+
 import Arrow from "@features/landing/components/primitives/Arrow"
-import { useCallback, useState, useEffect } from "react"
-import useEmblaCarousel from "embla-carousel-react"
 import NewsCarousel from "@features/landing/components/primitives/NewsCarousel"
+import useEmblaCarousel from "embla-carousel-react"
 
 function News() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
