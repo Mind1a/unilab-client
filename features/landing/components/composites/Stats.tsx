@@ -1,5 +1,5 @@
-import { statsData } from "@features/landing/data/landingData"
 import StatsUnit from "../primitives/StatsUnit"
+import { statsData } from "@features/landing/data/landingData"
 
 const Stats = () => {
   return (

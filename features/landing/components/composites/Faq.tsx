@@ -1,7 +1,8 @@
 "use client"
+
+import { FaqProps } from "@features/landing/types"
 import { Faqs } from "@features/landing/data/landingData"
 import Question from "../primitives/Question"
-import { FaqProps } from "@features/landing/types"
 
 const Faq = () => {
   return (

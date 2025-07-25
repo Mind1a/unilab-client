@@ -1,7 +1,7 @@
 import { BlueAccentShape } from "@features/landing/assets/icons"
 import Image from "next/image"
-import type { UniCourseCardProps } from "@features/landing/types"
 import Link from "next/link"
+import type { UniCourseCardProps } from "@features/landing/types"
 
 const UnicourseCard = ({ title, image }: UniCourseCardProps) => {
   return (

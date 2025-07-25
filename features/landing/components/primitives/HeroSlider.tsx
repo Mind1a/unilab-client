@@ -1,6 +1,6 @@
-import { heroData } from "@features/landing/data/landingData"
 import { EmblaViewportRefType } from "embla-carousel-react"
 import Image from "next/image"
+import { heroData } from "@features/landing/data/landingData"
 
 const HeroSlider = ({ emblaRef }: { emblaRef: EmblaViewportRefType }) => {
   return (

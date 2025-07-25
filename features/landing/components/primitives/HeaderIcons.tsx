@@ -1,6 +1,6 @@
-import Link from "next/link"
-import Image from "next/image"
 import { HeaderIconProps } from "@features/landing/types"
+import Image from "next/image"
+import Link from "next/link"
 
 const HeaderIcons = ({ logo, logoSizes }: HeaderIconProps) => {
   return (

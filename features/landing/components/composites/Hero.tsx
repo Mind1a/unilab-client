@@ -1,10 +1,11 @@
 "use client"
 
-import useEmblaCarousel from "embla-carousel-react"
 import { useEffect, useState } from "react"
+
 import Bullets from "../primitives/Bullets"
 import HeroSlider from "../primitives/HeroSlider"
 import HeroTop from "../primitives/HeroTop"
+import useEmblaCarousel from "embla-carousel-react"
 
 export const Hero = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })

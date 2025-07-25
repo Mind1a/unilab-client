@@ -1,8 +1,9 @@
 "use client"
-import { motion } from "motion/react"
+
 import Image from "next/image"
-import useMeasure from "react-use-measure"
 import { QuestionProps } from "@features/landing/types"
+import { motion } from "motion/react"
+import useMeasure from "react-use-measure"
 import { useState } from "react"
 
 const Question = ({ title, children, id }: QuestionProps) => {
