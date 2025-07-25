@@ -6,21 +6,21 @@ const HeightStyles = () => {
   const isMediumScreen = HeightCheck(845)
   const isSmallScreen = HeightCheck(650)
 
-  const gapValue = !isMediumScreen ? "68px" : isSmallScreen ? "28px" : "45px"
+  const gapValue = !isMediumScreen ? "48px" : isSmallScreen ? "20px" : "35px"
 
-  const gapValueIndicator = !isMediumScreen ? 68 : isSmallScreen ? 28 : 45
+  const gapValueIndicator = !isMediumScreen ? 48 : isSmallScreen ? 20 : 35
 
   const scrollHeight = !isMediumScreen
-    ? "697px"
+    ? "620px"
     : isSmallScreen
       ? "397px"
       : "497px"
-  const indicator = !isMediumScreen ? "60px" : isSmallScreen ? "30px" : "40px"
+  const indicator = !isMediumScreen ? "60px" : isSmallScreen ? "30px" : "55px"
   const indicatorMarginTop = !isMediumScreen
-    ? "42px"
+    ? "28px"
     : isSmallScreen
-      ? "27px"
-      : "24px"
+      ? "30px"
+      : "15px"
 
   return {
     gapValue,

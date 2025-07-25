@@ -33,7 +33,7 @@ const SideBarHeader = () => {
   }, [isOpen])
 
   return (
-    <div className="">
+    <div>
       <div className="relative z-[20] flex justify-between bg-[#090707] px-4 py-[15px] md:px-0 md:py-12">
         <div className="flex items-center gap-x-3 md:gap-x-5">
           {logos.map((logo) => (
