@@ -1,11 +1,13 @@
 "use client"
-import { logos, logoSizes } from "@features/landing/data/sideBarData"
-import Image from "next/image"
-import { useEffect, useState } from "react"
+
 import { AnimatePresence, motion } from "motion/react"
-import SideBarMenu from "./SideBarMenu"
-import HeaderIcons from "./HeaderIcons"
+import { logoSizes, logos } from "@features/landing/data/sideBarData"
+import { useEffect, useState } from "react"
+
 import BurgerMenuIcon from "./BurgerMenuIcon"
+import HeaderIcons from "./HeaderIcons"
+import Image from "next/image"
+import SideBarMenu from "./SideBarMenu"
 
 const SideBarHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -31,7 +33,7 @@ const SideBarHeader = () => {
   }, [isOpen])
 
   return (
-    <div className="">
+    <div>
       <div className="relative z-[20] flex justify-between bg-[#090707] px-4 py-[15px] md:px-0 md:py-12">
         <div className="flex items-center gap-x-3 md:gap-x-5">
           {logos.map((logo) => (

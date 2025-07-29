@@ -1,9 +1,10 @@
 "use client"
+
+import HeightStyles from "@features/landing/components/primitives/HeightStyles"
+import ScrollTracking from "./ScrollTracking"
+import SectionNavItem from "./SectionNavItem"
 import { SideBarList } from "@features/landing/data/landingData"
 import { SideBarMenuProps } from "@features/landing/types"
-import SectionNavItem from "./SectionNavItem"
-import ScrollTracking from "./ScrollTracking"
-import HeightStyles from "@features/landing/components/primitives/HeightStyles"
 
 const SideBarMenu = ({ CloseBurgerMenu }: SideBarMenuProps) => {
   const sectionIds = SideBarList.map((item) => item.href)
@@ -35,7 +36,7 @@ const SideBarMenu = ({ CloseBurgerMenu }: SideBarMenuProps) => {
   } = HeightStyles()
 
   return (
-    <div className="w-full max-w-[228px] 2xl:pr-0">
+    <div className="w-full max-w-[228px] px-4 md:px-0 2xl:pr-0">
       <div className="flex items-center gap-[24px]">
         <div
           className="relative w-[2px] flex-shrink-0 blur-[1px] filter"
@@ -46,7 +47,7 @@ const SideBarMenu = ({ CloseBurgerMenu }: SideBarMenuProps) => {
           }}
         >
           <div
-            className="absolute left-0 mt-[40px] h-[60px] w-[2px] rounded-full transition-all duration-300 ease-in-out"
+            className="absolute left-0 w-[2px] rounded-full transition-all duration-300 ease-in-out"
             style={{
               top: `${getIndicatorPosition()}px`,
               opacity: activeSection ? 1 : 0,

@@ -1,16 +1,20 @@
 "use client"
+
 import Arrow from "@features/landing/components/primitives/Arrow"
+import Link from "next/link"
 import OurProjectsSlide from "@features/landing/components/primitives/OurProjectsSlide"
 import { ourProjectsData } from "@features/landing/data/landingData"
 import useEmblaControls from "@features/landing/hooks/useEmblaControls"
-import Link from "next/link"
 
 function OurProjects() {
   const { emblaRef, prevDisabled, nextDisabled, scrollNext, scrollPrev } =
     useEmblaControls({ skipSnaps: true })
 
   return (
-    <section className="mx-auto flex w-full max-w-[1104px] flex-col gap-6 md:gap-12">
+    <section
+      id="projects"
+      className="mx-auto flex w-full max-w-[1104px] flex-col gap-6 md:gap-12"
+    >
       <div className="mb-[8px] flex items-center justify-between md:mb-10">
         <h2 className="font-case text-center text-2xl leading-8 font-black text-[#EDFAFF] md:text-5xl md:leading-14">
           პროექტები

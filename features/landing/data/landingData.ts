@@ -1,17 +1,17 @@
 // Types imports
 import { AccelerationLink } from "../types"
 import { FaqProps } from "../types"
+import frontEndImage from "../assets/front-end.png"
+import graphicDesignImage from "../assets/graphic-design.png"
+import ictImage from "../assets/ict.png"
+import interfaceCommunicationImage from "../assets/interface-communication-shared.png"
+// Our projects section slide image import
+import ourProjectSlide from "@features/landing/assets/project-slide-image.png"
 // Unicourse section images imports
 import python from "../assets/python.png"
-import frontEndImage from "../assets/front-end.png"
-import ictImage from "../assets/ict.png"
-import graphicDesignImage from "../assets/graphic-design.png"
-import interfaceCommunicationImage from "../assets/interface-communication-shared.png"
 // News section slide images imports
 import slideImg1 from "@features/landing/assets/slide-image-1.png"
 import slideImg2 from "@features/landing/assets/slide-image-2.png"
-// Our projects section slide image import
-import ourProjectSlide from "@features/landing/assets/project-slide-image.png"
 
 // Hero section data
 export const heroData = [
@@ -193,26 +193,31 @@ export const SideBarList = [
   },
   {
     id: 3,
+    section: "/პროექტები",
+    href: "projects",
+  },
+  {
+    id: 4,
     section: "/უნიკურსი",
     href: "uniCourse",
   },
   {
-    id: 4,
+    id: 5,
     section: "/აქსელერაცია",
     href: "accelerated",
   },
   {
-    id: 5,
+    id: 6,
     section: "/სიახლეები",
     href: "news",
   },
   {
-    id: 6,
+    id: 7,
     section: "/FAQ",
     href: "faq",
   },
   {
-    id: 7,
+    id: 8,
     section: "/კონტაქტი",
     href: "contact",
   },

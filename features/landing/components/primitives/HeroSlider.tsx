@@ -1,6 +1,6 @@
-import { heroData } from "@features/landing/data/landingData"
 import { EmblaViewportRefType } from "embla-carousel-react"
 import Image from "next/image"
+import { heroData } from "@features/landing/data/landingData"
 
 const HeroSlider = ({ emblaRef }: { emblaRef: EmblaViewportRefType }) => {
   return (
@@ -18,7 +18,7 @@ const HeroSlider = ({ emblaRef }: { emblaRef: EmblaViewportRefType }) => {
                   height={16}
                 />
               </button>
-              <p className="font-case text-right text-[32px] font-black md:text-4xl lg:text-5xl xl:text-8xl">
+              <p className="font-case text-right text-[32px] font-black select-none md:text-4xl lg:text-5xl xl:text-8xl">
                 {item.text}
               </p>
             </div>
