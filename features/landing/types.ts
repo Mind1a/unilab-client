@@ -107,3 +107,12 @@ export type EmblaOptions = {
   loop?: boolean
   skipSnaps?: boolean
 }
+
+export type NewsItem = {
+  id: number
+  title: string
+  date: string
+  tags: string[]
+  link: string
+  image: string
+}
