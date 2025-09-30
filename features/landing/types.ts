@@ -115,4 +115,5 @@ export type NewsItem = {
   tags: string[]
   link: string
   image: string
+  description: string
 }

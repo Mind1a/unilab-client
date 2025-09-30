@@ -1,4 +1,4 @@
-import NewsDetailClient from "./NewsDetailClient"
+import NewsDetailClient from "@features/landing/components/primitives/NewsDetailClient"
 
 type Props = {
   params: {
