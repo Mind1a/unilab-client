@@ -34,21 +34,24 @@ const NewsPage = () => {
               <p className="w-full max-w-[386px] text-[16px] font-bold text-[#D4D4D4] lg:text-[18px]">
                 {item.title}
               </p>
-              <p className="text-[#84858C]">{item.date}</p>
+              <p className="hidden text-[#84858C] lg:flex">{item.date}</p>
             </div>
-            <div className="flex justify-between">
-              <Link
-                href={`/news/${item.id}`}
-                className="flex cursor-pointer items-center gap-[8px]"
-              >
-                ვრცლად
-                <Image
-                  src="/newsIcon/image/svg/showMoreIcon.svg"
-                  alt="arrow"
-                  width={24}
-                  height={24}
-                />
-              </Link>
+            <div className="flex flex-col-reverse gap-[24px] lg:flex-row lg:justify-between">
+              <div className="flex justify-between lg:hidden">
+                <Link
+                  href={`/news/${item.id}`}
+                  className="flex cursor-pointer items-center gap-[8px]"
+                >
+                  ვრცლად
+                  <Image
+                    src="/newsIcon/image/svg/showMoreIcon.svg"
+                    alt="arrow"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
+                <p className="text-[#84858C]">{item.date}</p>
+              </div>
               <div className="flex gap-[6px]">
                 {item.tags.map((tag, index) => (
                   <div
