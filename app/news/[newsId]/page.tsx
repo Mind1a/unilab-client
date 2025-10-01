@@ -7,7 +7,5 @@ type Props = {
 }
 
 export default function NewsDetailPage({ params }: Props) {
-  console.log("params.newsId:", params.newsId)
-
   return <NewsDetailClient id={params.newsId} />
 }

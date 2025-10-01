@@ -33,7 +33,7 @@ const News = () => {
   if (isLoading) return <p>Loading...</p>
 
   return (
-    <div className="flex flex-col gap-[88px]">
+    <div className="flex w-full max-w-[1068px] flex-col gap-[88px]">
       <NewsHeader />
       <div className="flex flex-col gap-[48px]">
         {news?.map((item: NewsItem) => (

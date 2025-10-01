@@ -3,14 +3,14 @@ import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
 import { AnimatePresence, motion } from "motion/react"
-import { flyout, navigation } from "@features/landing/data/filtration"
+import { flyout, filterButton } from "@features/landing/data/filtration"
 
 const FilterButton = () => {
   const [openId, setOpenId] = useState<number | null>(null)
 
   return (
     <ul className="relative flex justify-start gap-[8px]">
-      {navigation.map((navigationElement) => (
+      {filterButton.map((navigationElement) => (
         <div
           key={navigationElement.id}
           className="cursor-pointer"
@@ -52,12 +52,14 @@ const FilterButton = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -15 }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="absolute top-[50px] flex min-h-[34px] flex-col gap-[37px] border border-[#3B3B3E] bg-[#0F0F10] px-[18px] py-[18px] shadow-[0px_0px_4px_0px_#00000040]"
+                    className="absolute top-[50px] flex min-h-[34px] w-full max-w-[108px] flex-col gap-[37px] rounded-[8px] border border-[#3B3B3E] bg-[#0F0F10] px-[18px] py-[18px] shadow-[0px_0px_4px_0px_#00000040]"
                   >
                     {flyout[openId]?.map((flyoutElement) => (
                       <li key={flyoutElement.id}>
                         <Link href={flyoutElement.href}>
-                          {flyoutElement.name}
+                          <p className="text-[12px] text-[#D4D4D4]">
+                            {flyoutElement.name}
+                          </p>
                         </Link>
                       </li>
                     ))}

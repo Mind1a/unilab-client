@@ -19,7 +19,7 @@ export default function NewsDetailClient({ id }: Props) {
   if (!data) return <p>No news found</p>
 
   return (
-    <div className="w-full max-w-[1068px] space-y-[48px] lg:mt-[114px]">
+    <div className="mt-[24px] w-full max-w-[1068px] flex-1 space-y-[48px] lg:mt-[114px]">
       <div className="flex flex-col-reverse items-center justify-between gap-[24px] lg:flex-row lg:gap-[6px]">
         <p className="flex w-full max-w-[504px] justify-end text-[#84858C] lg:hidden">
           {data.date}
@@ -39,7 +39,7 @@ export default function NewsDetailClient({ id }: Props) {
                   </div>
                 ))}
               </div>
-              <p className="hidden text-[#84858C] lg:flex">{data.date}</p>1
+              <p className="hidden text-[#84858C] lg:flex">{data.date}</p>
             </div>
           </div>
         </div>
