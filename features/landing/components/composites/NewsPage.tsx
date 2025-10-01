@@ -1,12 +1,11 @@
-import { useQuery } from "@tanstack/react-query"
-import News from "./News"
+import News from "../primitives/News"
 
 const NewsPage = () => {
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ["cards"],
-    queryFn: News,
-  })
-  return <div></div>
+  return (
+    <div>
+      <News />
+    </div>
+  )
 }
 
 export default NewsPage

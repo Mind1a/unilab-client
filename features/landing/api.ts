@@ -1,17 +1,17 @@
-export const News = async () => {
-  const res = await fetch(
-    `https://67ae22f99e85da2f020c8b73.mockapi.io/registration`,
-    { cache: "no-store" }
-  )
+const baseUrl = process.env.NEXT_PUBLIC_BASE_API_URL
+
+export const NewsApi = async (page: string) => {
+  const res = await fetch(`${baseUrl}/registration?page=${page}&limit=4`, {
+    cache: "no-store",
+  })
   if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`)
   return res.json()
 }
 
 export const NewsById = async (id: string) => {
-  const res = await fetch(
-    `https://67ae22f99e85da2f020c8b73.mockapi.io/registration/${id}`,
-    { cache: "no-store" }
-  )
+  const res = await fetch(`${baseUrl}/registration/${id}`, {
+    cache: "no-store",
+  })
   if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`)
   return res.json()
 }
