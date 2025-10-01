@@ -1,14 +1,9 @@
 "use client"
+import { PaginationProps } from "@features/landing/types"
 import {
   PaginationLeftLeftArrow,
   PaginationLeftRightArrow,
 } from "public/newsIcon/image/svg"
-
-type PaginationProps = {
-  page: number
-  totalPages: number
-  setPage: (page: number) => void
-}
 
 const Pagination = ({ page, totalPages, setPage }: PaginationProps) => {
   return (

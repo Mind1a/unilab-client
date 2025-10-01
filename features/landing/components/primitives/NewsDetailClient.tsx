@@ -39,8 +39,7 @@ export default function NewsDetailClient({ id }: Props) {
                   </div>
                 ))}
               </div>
-
-              <p className="hidden text-[#84858C] lg:flex">{data.date}</p>
+              <p className="hidden text-[#84858C] lg:flex">{data.date}</p>1
             </div>
           </div>
         </div>

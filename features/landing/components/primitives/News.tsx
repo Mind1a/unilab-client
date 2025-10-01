@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
 import Pagination from "./Pagination"
+import NewsHeader from "./NewsHeader"
 
 const News = () => {
   const router = useRouter()
@@ -33,6 +34,7 @@ const News = () => {
 
   return (
     <div className="flex flex-col gap-[88px]">
+      <NewsHeader />
       <div className="flex flex-col gap-[48px]">
         {news?.map((item: NewsItem) => (
           <div
