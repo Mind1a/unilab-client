@@ -136,3 +136,9 @@ export type FlyoutItem = {
   href: string
 }
 export type Flyout = Record<number, FlyoutItem[]>
+
+export type ParamsProps = {
+  params: {
+    newsId: string
+  }
+}

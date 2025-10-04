@@ -33,7 +33,7 @@ const News = () => {
   if (isError) return <p>Something went wrong: {error?.message}</p>
 
   return (
-    <div className="flex w-full max-w-[1068px] flex-col gap-[88px]">
+    <div className="flex w-full max-w-[1068px] flex-col gap-[48px]">
       <NewsHeader />
       <div className="flex min-h-[864px] flex-col gap-[48px]">
         {isLoading ? (

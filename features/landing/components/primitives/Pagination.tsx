@@ -7,7 +7,7 @@ import {
 
 const Pagination = ({ page, totalPages, setPage }: PaginationProps) => {
   return (
-    <div className="flex items-center justify-center gap-[8px]">
+    <div className="mt-[44px] flex items-center justify-center gap-[8px]">
       <button
         disabled={page === 1}
         onClick={() => setPage(page - 1)}

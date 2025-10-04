@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <QueryProvider>
-          <div className="m-auto flex min-h-screen w-full max-w-[1440px] flex-col justify-between px-4 md:flex-row md:gap-6 md:px-8 xl:px-12">
+          <div className="m-auto flex w-full max-w-[1440px] flex-col justify-between px-4 md:flex-row md:gap-6 md:px-8 xl:px-12">
             <aside className="h-[80px] shrink-0 md:w-[210px]">
               <SideBar />
             </aside>
