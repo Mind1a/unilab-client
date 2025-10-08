@@ -107,3 +107,38 @@ export type EmblaOptions = {
   loop?: boolean
   skipSnaps?: boolean
 }
+
+export type NewsItem = {
+  id: number
+  title: string
+  date: string
+  tags: string[]
+  link: string
+  image: string
+  description: string
+}
+export type PaginationProps = {
+  page: number
+  totalPages: number
+  setPage: (page: number) => void
+}
+
+export type NavigationItem = {
+  id: number
+  name: string
+  href: string
+  dropDown: boolean
+}
+
+export type FlyoutItem = {
+  id: number
+  name: string
+  href: string
+}
+export type Flyout = Record<number, FlyoutItem[]>
+
+export type ParamsProps = {
+  params: {
+    newsId: string
+  }
+}

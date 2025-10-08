@@ -1,5 +1,9 @@
 import type { NextConfig } from "next"
+
 const nextConfig: NextConfig = {
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule: any) =>
       rule.test?.test?.(".svg")
