@@ -1,13 +1,13 @@
 "use client"
-import { NewsApi } from "@features/landing/api"
+import { NewsApi } from "@features/news/components/api"
 import { NewsItem } from "@features/landing/types"
 import { useQuery } from "@tanstack/react-query"
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
-import Pagination from "./Pagination"
 import NewsHeader from "./NewsHeader"
 import NewsSkeleton from "./NesSkeleton"
+import Pagination from "./Pagination"
 
 const News = () => {
   const router = useRouter()

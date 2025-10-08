@@ -1,6 +1,6 @@
 "use client"
 
-import { NewsById } from "@features/landing/api"
+import { NewsById } from "@features/news/components/api"
 import { NewsItem } from "@features/landing/types"
 import { useQuery } from "@tanstack/react-query"
 import Image from "next/image"

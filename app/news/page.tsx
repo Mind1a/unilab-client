@@ -1,4 +1,4 @@
-import NewsPage from "@features/landing/components/primitives/News"
+import NewsPage from "@features/news/components/composites/NewsPage"
 import React from "react"
 
 const News = () => {
