@@ -4,6 +4,7 @@ import { NewsById } from "@features/landing/api"
 import { NewsItem } from "@features/landing/types"
 import { useQuery } from "@tanstack/react-query"
 import Image from "next/image"
+import NewsDetailSkeleton from "./NewsDetailSkeleton"
 
 type Props = {
   id: string
@@ -15,7 +16,7 @@ export default function NewsDetailClient({ id }: Props) {
     queryFn: () => NewsById(id),
   })
 
-  if (isLoading) return <p>Loading...</p>
+  if (isLoading) return <NewsDetailSkeleton />
   if (isError) return <p>Error loading news</p>
   if (!data) return <p>No news found</p>
 
