@@ -12,7 +12,7 @@ const NewsHeader = () => {
       <div className="flex w-full max-w-[1068px] flex-col items-center justify-center gap-[16px] lg:flex-row lg:justify-between">
         <div className="relative w-full lg:max-w-[648px]">
           <input
-            type="search"
+            type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full rounded-[8px] border border-[#3B3B3E] bg-[#0F0F10] py-[8px] pr-[8px] pl-[36px] text-[12px] text-[#84858C] outline-none lg:max-w-[648px]"
