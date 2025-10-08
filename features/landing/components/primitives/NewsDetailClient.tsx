@@ -3,6 +3,7 @@
 import { NewsById } from "@features/landing/api"
 import { NewsItem } from "@features/landing/types"
 import { useQuery } from "@tanstack/react-query"
+import Image from "next/image"
 
 type Props = {
   id: string
@@ -24,7 +25,9 @@ export default function NewsDetailClient({ id }: Props) {
         <p className="flex w-full max-w-[504px] justify-end text-[#84858C] lg:hidden">
           {data.date}
         </p>
-        <div className="min-h-[380px] w-full max-w-[504px] rounded-[8px] bg-black"></div>
+        <div className="min-h-[380px] w-full max-w-[504px] rounded-[8px] bg-black">
+          <Image src={data.image} alt="coverImage" width={504} height={380} />
+        </div>
         <div className="flex min-h-[84px] w-full max-w-[504px] flex-col justify-between gap-[24px] lg:min-h-[380px] lg:gap-[0px]">
           <p className="text-[24px] font-black text-[#D4D4D4]">{data.title}</p>
           <div>

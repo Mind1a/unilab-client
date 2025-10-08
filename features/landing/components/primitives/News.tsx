@@ -44,7 +44,14 @@ const News = () => {
               key={item.id}
               className="flex flex-col items-center gap-[16px] lg:flex-row lg:gap-[24px]"
             >
-              <div className="min-h-[249px] w-full max-w-[332px] rounded-[8px] bg-black lg:min-h-[180px] lg:max-w-[240px]"></div>
+              <div className="min-h-[249px] w-full max-w-[332px] rounded-[8px] bg-black lg:min-h-[180px] lg:max-w-[240px]">
+                <Image
+                  src={item.image}
+                  alt="coverImage"
+                  width={332}
+                  height={249}
+                />
+              </div>
               <div className="flex min-h-[184px] w-full max-w-[804px] flex-col justify-between rounded-[16px] bg-[#0F0F10] p-[16px] lg:min-h-[180px]">
                 <div className="flex justify-between">
                   <p className="w-full max-w-[386px] text-[16px] font-bold text-[#D4D4D4] lg:text-[18px]">

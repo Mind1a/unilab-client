@@ -3,7 +3,7 @@ import FilterButton from "./FilterButton"
 
 const NewsHeader = () => {
   return (
-    <div className="mt-[24px] flex flex-col items-center gap-[48px] lg:mt-[114px] lg:items-start">
+    <div className="mt-[24px] flex flex-col items-center gap-[48px] lg:mt-[28px] lg:items-start">
       <p className="hidden text-[64px] font-bold lg:flex">სიახლეები</p>
       <div className="flex w-full max-w-[1068px] flex-col items-center justify-center gap-[16px] lg:flex-row lg:justify-between">
         <div className="relative w-full max-w-[311px] lg:max-w-[648px]">
