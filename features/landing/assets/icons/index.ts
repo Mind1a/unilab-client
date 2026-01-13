@@ -3,3 +3,8 @@ export { default as BlueAccentShape } from "@features/landing/assets/icons/blueA
 export { default as MapIcon } from "@features/landing/assets/icons/mapIcon.svg"
 export { default as MailIcon } from "@features/landing/assets/icons/mailIcon.svg"
 export { default as UnilabFooter } from "@features/landing/assets/icons/unilabFooter.svg"
+
+export { default as Facebook } from "@features/landing/assets/icons/facebook.svg"
+export { default as Instagram } from "@features/landing/assets/icons/instagram.svg"
+export { default as Linkedin } from "@features/landing/assets/icons/linkedin.svg"
+export { default as Youtube } from "@features/landing/assets/icons/youtube.svg"

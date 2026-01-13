@@ -39,7 +39,7 @@ export default function RootLayout({
             </aside>
             <div className="flex w-full flex-col md:max-w-[calc(100%-210px-36px)]">
               <main className="w-full">{children}</main>
-              <footer className="font-case mt-[194px] w-full pb-[98px]">
+              <footer className="md:font-case mt-[84px] w-full pb-[32px] md:mt-[194px] md:pb-[98px]">
                 <Footer />
               </footer>
             </div>
