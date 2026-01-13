@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="font-case w-full">
+    <section className="text-#D4D4D4 w-full">
       <div className="flex h-[156px] justify-between">
         <div className="flex flex-1 flex-col gap-[24px]">
           <div className="flex flex-col gap-[12px]">
@@ -16,17 +16,21 @@ const Footer = () => {
               <div className="h-[24px] w-[24px]">
                 <MapIcon />
               </div>
-              <span>3/5 ქაქუცა ჩოლოყაშვილის გამზირი, თბილისი</span>
+              <span className="leading-6 font-medium">
+                3/5 ქაქუცა ჩოლოყაშვილის გამზირი, თბილისი
+              </span>
             </div>
             <div className="flex items-center gap-[24px]">
               <div className="h-[24px] w-[24px]">
                 <MailIcon />
               </div>
-              <span className="uppercase">infounilab@iliauni.edu.ge</span>
+              <span className="font-medium uppercase">
+                infounilab@iliauni.edu.ge
+              </span>
             </div>
           </div>
           <div className="h-[48px] w-[210px] flex-none">
-            <button className="cursor-pointer items-center gap-2 rounded-[8px] border border-[#EDFAFF] px-6 py-3 text-[#EDFAFF] transition-colors hover:bg-[#D4D4D4] hover:text-black">
+            <button className="cursor-pointer items-center gap-2 rounded-[8px] border border-[#EDFAFF] px-6 py-3 font-medium transition-colors hover:bg-[#D4D4D4] hover:text-black">
               კიბერგზამკვლევი
             </button>
           </div>
@@ -46,7 +50,7 @@ const Footer = () => {
           />
         </div>
       </div>
-    </footer>
+    </section>
   )
 }
 
