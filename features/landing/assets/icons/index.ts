@@ -1,2 +1,5 @@
 export { default as BtnArrow } from "@features/landing/assets/icons/btnArrow.svg"
 export { default as BlueAccentShape } from "@features/landing/assets/icons/blueAccentShape.svg"
+export { default as MapIcon } from "@features/landing/assets/icons/mapIcon.svg"
+export { default as MailIcon } from "@features/landing/assets/icons/mailIcon.svg"
+export { default as UnilabFooter } from "@features/landing/assets/icons/unilabFooter.svg"

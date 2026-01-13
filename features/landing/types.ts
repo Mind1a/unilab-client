@@ -142,3 +142,9 @@ export type ParamsProps = {
     newsId: string
   }
 }
+
+export type LinkItem = {
+  id: number
+  label: string
+  href: string
+}

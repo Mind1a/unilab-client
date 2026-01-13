@@ -6,6 +6,7 @@ import News from "@features/landing/components/composites/News"
 import OurProjects from "@features/landing/components/composites/OurProjects"
 import Stats from "./Stats"
 import Unicourse from "./Unicourse"
+import Footer from "./Footer"
 
 const Landing = () => {
   return (
@@ -18,6 +19,7 @@ const Landing = () => {
       <Acceleration />
       <News />
       <Faq />
+      <Footer />
     </div>
   )
 }
