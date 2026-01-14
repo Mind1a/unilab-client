@@ -1,23 +1,24 @@
-import { RoadMapArticlesList } from "@features/landing/data/roadmapData"
 import React from "react"
-import RoadmapArticle from "../primitives/RoadmapArticle"
 import RoadmapHeroArticle from "../primitives/RoadmapHeroArticle"
+import roadmapDataJson from "@features/roadmap/data/roadmapData.json"
+import type { RoadmapAtricle as RoadmapAtricleType } from "@features/landing/types"
+import RoadmapArticle from "../primitives/RoadmapArticle"
 
 function RoadmapPage() {
+  const RoadMapArticlesList = roadmapDataJson as RoadmapAtricleType[]
+
   return (
-    <div className="mt-[29px] flex flex-col">
+    <div className="mt-[29px] flex max-w-[1068px] flex-col">
       <RoadmapHeroArticle></RoadmapHeroArticle>
 
       <section className="flex flex-col gap-[40px]">
-        {RoadMapArticlesList.map((article) => {
-          return (
-            <RoadmapArticle
-              key={article.id}
-              title={article.title}
-              content={article.content}
-            ></RoadmapArticle>
-          )
-        })}
+        {RoadMapArticlesList.map((article) => (
+          <RoadmapArticle
+            key={article.id}
+            title={article.title}
+            content={article.content}
+          ></RoadmapArticle>
+        ))}
       </section>
     </div>
   )

@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image"
-import { ReactNode } from "react"
 
 // Unicourse card component props types
 export type UniCourseCardProps = {
@@ -144,10 +143,22 @@ export type ParamsProps = {
   }
 }
 
+export type PrimitiveRoadmapArticle = {
+  contentType: "primitive"
+  text: string
+}
+export type CompositeRoadmapArticle = {
+  contentType: "composite"
+  elements: {
+    highlightedText: string
+    text: string
+  }[]
+}
+
 export type RoadmapAtricle = {
   id: number
   title: string
-  content: ReactNode
+  content: PrimitiveRoadmapArticle | CompositeRoadmapArticle
 }
 
 export type RoadmapPageProps = Pick<RoadmapAtricle, "title" | "content">

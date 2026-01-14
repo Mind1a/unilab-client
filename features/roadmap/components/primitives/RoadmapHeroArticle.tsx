@@ -1,7 +1,6 @@
 function RoadmapHeroArticle() {
   return (
     <article>
-      {/* max-sm:pr-[8px] რომ ტექსტი დაივრაპოს < 440px*/}
       <h1 className="font-case mb-[48px] text-[64px] font-[900] max-lg:text-[42px] max-sm:pr-[8px] max-sm:text-[24px]">
         უნილაბის კიბერგზამკვლევი
       </h1>
