@@ -15,7 +15,7 @@ import {
 
 const Footer = () => {
   return (
-    <section className="text-#D4D4D4 w-full">
+    <section className="w-full text-[#D4D4D4]">
       <div className="flex flex-col items-center gap-10 md:h-[156px] md:flex-row md:items-end md:justify-between">
         <div className="order-2 flex flex-col items-center gap-6 text-center md:order-1 md:flex-1 md:items-start md:text-left">
           <div className="order-1 h-[48px] w-[210px] flex-none md:order-2">
@@ -25,22 +25,29 @@ const Footer = () => {
           </div>
 
           <div className="order-2 flex flex-col gap-[14px] md:order-1">
-            <div className="flex flex-col items-center gap-[8px] md:flex-row md:gap-[24px]">
+            <Link
+              href="https://www.google.com/maps/search/3%2F5+%E1%83%A5%E1%83%90%E1%83%A5%E1%83%A3%E1%83%AA%E1%83%90+%E1%83%A8%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%A7%E1%83%90%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1+%E1%83%92%E1%83%90%E1%83%9B%E1%83%96%E1%83%98%E1%83%A0%E1%83%98+%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98"
+              target="_blank"
+              className="flex max-w-[345px] flex-col items-center gap-[8px] transition-opacity hover:opacity-80 md:flex-row md:gap-[24px]"
+            >
               <div>
                 <MapIcon className="h-[24px] w-[24px]" />
               </div>
-              <span className="md:font-base max-w-[34ch] text-[14px] leading-6 font-medium">
+              <span className="font-case text-[14px] leading-6">
                 3/5 ქაქუცა ჩოლოყაშვილის გამზირი, თბილისი
               </span>
-            </div>
-            <div className="flex flex-col items-center gap-[8px] md:flex-row md:gap-[24px]">
+            </Link>
+            <Link
+              href="mailto:infounilab@iliauni.edu.ge"
+              className="flex flex-col items-center gap-[8px] transition-opacity hover:opacity-80 md:flex-row md:gap-[24px]"
+            >
               <div>
                 <MailIcon className="h-[24px] w-[24px]" />
               </div>
               <span className="md:font-base text-[14px] leading-6 font-medium md:uppercase">
                 infounilab@iliauni.edu.ge
               </span>
-            </div>
+            </Link>
           </div>
         </div>
 
