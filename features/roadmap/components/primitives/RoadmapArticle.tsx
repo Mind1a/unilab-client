@@ -26,14 +26,14 @@ function RoadmapArticle({ title, content }: RoadmapPageProps) {
                 key={el.highlightedText}
               >
                 <span>{el.text}</span>
-                <strong>{el.highlightedText} </strong>
+                <b>{el.highlightedText} </b>
               </span>
             )
           }
 
           return (
             <span key={el.highlightedText}>
-              <strong>{el.highlightedText} </strong> <span>{el.text}</span>
+              <b>{el.highlightedText} </b> <span>{el.text}</span>
             </span>
           )
         })}
