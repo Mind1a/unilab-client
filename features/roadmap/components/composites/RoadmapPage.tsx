@@ -9,7 +9,7 @@ function RoadmapPage() {
 
   return (
     <div className="mt-[29px] flex max-w-[1068px] flex-col">
-      <RoadmapHeroArticle></RoadmapHeroArticle>
+      <RoadmapHeroArticle />
 
       <section className="flex flex-col gap-[40px]">
         {RoadMapArticlesList.map((article) => (
@@ -17,7 +17,7 @@ function RoadmapPage() {
             key={article.id}
             title={article.title}
             content={article.content}
-          ></RoadmapArticle>
+          />
         ))}
       </section>
     </div>
