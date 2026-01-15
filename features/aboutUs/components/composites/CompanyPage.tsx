@@ -1,15 +1,16 @@
-import { uniCourses } from "@features/landing/data/uniCourses"
+import { uniCourses } from "@features/aboutUs/data/uniCourses"
+import PracticeLink from "common/components/primitives/PracticeLink"
 
 const CompanyPage = () => {
   return (
-    <main className="mx-auto w-full max-w-[1068px] bg-black px-[24px] py-[48px]">
-      <div className="mb-[48px] max-w-[1440px]">
-        <h1 className="font-case mt-[50px] text-[64px] leading-[72px] font-[900] text-white">
+    <main className="mx-auto w-full max-w-[1068px] py-[48px] text-[#D4D4D4]">
+      <section className="mb-[48px] max-w-[1440px]">
+        <h1 className="font-case mt-[50px] text-[64px] leading-[72px] font-[900]">
           ჩვენ შესახებ
         </h1>
-      </div>
+      </section>
 
-      <div className="max-w-[1,068px]">
+      <section className="max-w-[1068px]">
         <p className="font-case text-[16px] leading-[24px] font-[500]">
           ოდესმე გიფიქრია პატარა ოთახზე, რომელში შესვლისას დროსა და სივრცეში
           იკარგები და საშუალება გეძლევა მომავლის გარკვეული ნაწილი დაინახო? ისეთი
@@ -30,43 +31,50 @@ const CompanyPage = () => {
           თავგადასავალი სწორედ მთვარის მიღმა და თეორიული ცოდნის მიღების შემდეგ
           პრაქტიკაში გველის.
         </p>
-      </div>
-      <div className="mt-[48px]">
-        <span className="font-case text-[16px] font-[500]">
+      </section>
+
+      <section className="mt-[48px]">
+        <h2 className="font-case sr-only">პრაქტიკული პროგრამები</h2>
+        <p className="font-case text-[16px] font-[500]">
           თუ შესაბამისი თეორიული ცოდნა გაქვს, შეგიძლია შემოგვიერთდე
-        </span>
-        <p className="font-case mt-4 flex w-[312px] cursor-pointer items-center justify-between text-[16px] font-[900]">
-          პრაქტიკულ პროგრამებზე
-          <img src="/Btn.Arrow.svg" alt="" />
         </p>
+        <PracticeLink className="mt-4 max-w-[312px]" />
         <p className="font-case mt-4 text-[16px] font-[500]">
           და იმუშაო რეალურ პროექტებზე;
         </p>
-      </div>
-      <div className="mt-8">
-        <p className="font-case text-[16px]">
+      </section>
+
+      <section className="mt-8">
+        <h2 className="font-case text-[16px]">
           ან დააგროვო თეორიული ცოდნა შემდეგი სასწავლო კურსების საშუალებით:
-        </p>
-      </div>
-      <div className="mt-[48px] h-[276px] w-[312px] space-y-[18px]">
-        {uniCourses.map((uniCourse) => (
-          <h3
-            className="font-case flex cursor-pointer items-center justify-between font-[900]"
-            key={uniCourse.id}
-          >
-            {uniCourse.title}
-            <img src={uniCourse.icon} alt="" />
-          </h3>
-        ))}
-      </div>
-      <div className="mt-[48px] h-[96px] w-[639px]">
+        </h2>
+      </section>
+
+      <section className="mt-[48px]" aria-labelledby="courses-heading">
+        <h2 id="courses-heading" className="sr-only">
+          სასწავლო კურსები
+        </h2>
+        <ul className="flex max-w-[312px] flex-col gap-[18px]">
+          {uniCourses.map((uniCourse) => (
+            <li key={uniCourse.id}>
+              <PracticeLink
+                title={uniCourse.title}
+                href={`/courses/${uniCourse.slug}`}
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mt-[48px] max-w-[639px]">
+        <h2 className="sr-only">დამატებითი ინფორმაცია</h2>
         <p className="font-case font-[500]">
           ჩვენს განზომილებაში არსებული დროის ორიენტირი უნილაბში იკარგება, ამიტომ
           სივრცე 24 საათი ღიაა და ჩვენს კიბერარმიაში გაწევრიანების შემდეგ
           შეგიძლია ნებისმიერ დროს გვესტუმრო, გამოიყენო ჩვენი სამუშაო ადგილი და
           ტექნიკა.
         </p>
-      </div>
+      </section>
     </main>
   )
 }

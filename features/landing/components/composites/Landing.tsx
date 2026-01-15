@@ -6,7 +6,7 @@ import News from "@features/landing/components/composites/News"
 import OurProjects from "@features/landing/components/composites/OurProjects"
 import Stats from "./Stats"
 import Unicourse from "./Unicourse"
-import CompanyPage from "../company/CompanyPage"
+import CompanyPage from "../../../aboutUs/components/composites/CompanyPage"
 
 const Landing = () => {
   return (
