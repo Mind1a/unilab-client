@@ -4,7 +4,7 @@ import { footerSocials } from "@features/landing/data/footerSocials"
 import {
   MapIcon,
   MailIcon,
-  UnilabFooter,
+  // UnilabFooter,
 } from "@features/landing/assets/icons/index"
 import {
   Facebook,
@@ -33,7 +33,7 @@ const Footer = () => {
               <div>
                 <MapIcon className="h-[24px] w-[24px]" />
               </div>
-              <span className="font-case text-[14px] leading-6">
+              <span className="md:font-case text-[14px] md:text-[14px] lg:text-[16px]">
                 3/5 ქაქუცა ჩოლოყაშვილის გამზირი, თბილისი
               </span>
             </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
               <div>
                 <MailIcon className="h-[24px] w-[24px]" />
               </div>
-              <span className="md:font-base text-[14px] leading-6 font-medium md:uppercase">
+              <span className="text-[14px] font-medium md:text-[14px] md:uppercase lg:text-[16px]">
                 infounilab@iliauni.edu.ge
               </span>
             </Link>
@@ -52,7 +52,10 @@ const Footer = () => {
         </div>
 
         <div className="order-4 md:order-2 md:flex md:flex-1 md:justify-center">
-          <UnilabFooter />
+          {/* <UnilabFooter /> */}
+          <span className="font-case text-[14px] font-bold lg:text-[16px]">
+            Unilab©
+          </span>
         </div>
 
         <div className="order-3 hidden md:flex md:flex-1 md:justify-end">
@@ -61,7 +64,7 @@ const Footer = () => {
             ulClassName="flex gap-6
               md:flex-col md:gap-[20px] md:w-[142px]"
             linkClassName="flex items-center gap-2 justify-between"
-            labelClassName="font-medium text-base uppercase"
+            labelClassName="font-medium uppercase md:text-[14px] lg:text-[16px]"
             arrowClassName="h-4 w-4"
           />
         </div>
