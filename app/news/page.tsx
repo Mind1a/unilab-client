@@ -1,10 +1,12 @@
 import NewsPage from "@features/news/components/composites/NewsPage"
-import React from "react"
+import { Suspense } from "react"
 
 const News = () => {
   return (
     <div>
-      <NewsPage />
+      <Suspense fallback={<div>Loading...</div>}>
+        <NewsPage />
+      </Suspense>
     </div>
   )
 }

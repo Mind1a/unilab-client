@@ -138,9 +138,15 @@ export type FlyoutItem = {
 export type Flyout = Record<number, FlyoutItem[]>
 
 export type ParamsProps = {
-  params: {
+  params: Promise<{
     newsId: string
-  }
+  }>
+}
+
+export type LinkItem = {
+  id: number
+  label: string
+  href: string
 }
 
 export type PrimitiveRoadmapArticle = {

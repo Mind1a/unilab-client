@@ -1,6 +1,7 @@
 import NewsDetailClient from "@features/news/components/primitives/NewsDetailClient"
 import { ParamsProps } from "@features/landing/types"
 
-export default function NewsDetailPage({ params }: ParamsProps) {
-  return <NewsDetailClient id={params.newsId} />
+export default async function NewsDetailPage({ params }: ParamsProps) {
+  const { newsId } = await params
+  return <NewsDetailClient id={newsId} />
 }
