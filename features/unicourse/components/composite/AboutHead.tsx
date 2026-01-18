@@ -19,18 +19,15 @@ const AboutHead = ({
       </header>
 
       <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-10 xl:flex-row xl:items-start xl:gap-16">
-        {/* Image Container - Fixed width per breakpoint, auto height */}
         <div className="w-full shrink-0 sm:max-w-[400px] md:max-w-[450px] xl:max-w-[354px]">
           <Image
             src={ImageTwo}
             alt={instructor}
-            // Removed min-h and object-contain to prevent letterboxing
             className="h-auto w-full rounded-2xl object-cover"
             priority
           />
         </div>
 
-        {/* Content Container */}
         <article className="w-full flex-1 space-y-6">
           <h2 className="text-[32px] leading-tight font-bold lg:text-[48px] xl:text-[64px]">
             {instructor}
@@ -38,7 +35,6 @@ const AboutHead = ({
 
           <div className="font-case space-y-6 text-[14px] leading-relaxed text-[#D4D4D4] xl:text-[16px]">
             {bio.map((paragraph, index) => (
-              // Changed key from .length to index (length is not unique)
               <Paragraph key={index}>{paragraph}</Paragraph>
             ))}
           </div>

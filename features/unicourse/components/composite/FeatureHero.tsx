@@ -25,7 +25,7 @@ const FeatureHero = ({
               <span className="font-black">{instructor}</span>
             </p>
           </div>
-          <div className="mt-6 hidden sm:block">
+          <div className="mt-6 block">
             <Button />
           </div>
         </div>
