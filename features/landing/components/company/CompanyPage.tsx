@@ -1,3 +1,5 @@
+import { uniCourses } from "@features/aboutUs/data/uniCourses"
+
 const CompanyPage = () => {
   return (
     <main className="mx-auto w-full max-w-[1068px] bg-black px-[24px] py-[48px]">
@@ -53,7 +55,6 @@ const CompanyPage = () => {
             key={uniCourse.id}
           >
             {uniCourse.title}
-            <img src={uniCourse.icon} alt="" />
           </h3>
         ))}
       </div>

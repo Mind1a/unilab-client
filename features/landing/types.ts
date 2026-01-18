@@ -138,9 +138,9 @@ export type FlyoutItem = {
 export type Flyout = Record<number, FlyoutItem[]>
 
 export type ParamsProps = {
-  params: {
+  params: Promise<{
     newsId: string
-  }
+  }>
 }
 
 export type LinkItem = {
@@ -168,4 +168,3 @@ export type RoadmapAtricle = {
 }
 
 export type RoadmapPageProps = Pick<RoadmapAtricle, "title" | "content">
-
