@@ -1,0 +1,41 @@
+import { RoadmapPageProps } from "@features/landing/types"
+import RoadmapArticleHeader from "./RoadmapArticleHeader"
+
+function RoadmapArticle({ title, content }: RoadmapPageProps) {
+  return (
+    <article>
+      <RoadmapArticleHeader title={title} />
+
+      {content.contentType === "primitive" ? (
+        <p className="font-case leading-[24px] tracking-[0.8px]">
+          {content.text}
+        </p>
+      ) : (
+        <p className="font-case flex flex-col gap-[16px] leading-[24px]">
+          {/* Conditional Rendering */}
+          {content.elements.map((el) => {
+            if (title === "იდეები და აქტივობები") {
+              return (
+                <span
+                  className="flex flex-col gap-[8px]"
+                  key={el.highlightedText}
+                >
+                  <span>{el.text}</span>
+                  <b>{el.highlightedText} </b>
+                </span>
+              )
+            }
+
+            return (
+              <span key={el.highlightedText}>
+                <b>{el.highlightedText} </b> <span>{el.text}</span>
+              </span>
+            )
+          })}
+        </p>
+      )}
+    </article>
+  )
+}
+
+export default RoadmapArticle
