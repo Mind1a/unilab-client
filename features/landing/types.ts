@@ -107,3 +107,58 @@ export type EmblaOptions = {
   loop?: boolean
   skipSnaps?: boolean
 }
+
+export type NewsItem = {
+  id: number
+  title: string
+  date: string
+  tags: string[]
+  link: string
+  image: string
+  description: string
+}
+export type PaginationProps = {
+  page: number
+  totalPages: number
+  setPage: (page: number) => void
+}
+
+export type NavigationItem = {
+  id: number
+  name: string
+  href: string
+  dropDown: boolean
+}
+
+export type FlyoutItem = {
+  id: number
+  name: string
+  href: string
+}
+export type Flyout = Record<number, FlyoutItem[]>
+
+export type ParamsProps = {
+  params: {
+    newsId: string
+  }
+}
+
+export type PrimitiveRoadmapArticle = {
+  contentType: "primitive"
+  text: string
+}
+export type CompositeRoadmapArticle = {
+  contentType: "composite"
+  elements: {
+    highlightedText: string
+    text: string
+  }[]
+}
+
+export type RoadmapAtricle = {
+  id: number
+  title: string
+  content: PrimitiveRoadmapArticle | CompositeRoadmapArticle
+}
+
+export type RoadmapPageProps = Pick<RoadmapAtricle, "title" | "content">
