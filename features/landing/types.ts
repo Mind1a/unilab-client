@@ -143,6 +143,12 @@ export type ParamsProps = {
   }
 }
 
+export type LinkItem = {
+  id: number
+  label: string
+  href: string
+}
+
 export type PrimitiveRoadmapArticle = {
   contentType: "primitive"
   text: string
@@ -162,3 +168,4 @@ export type RoadmapAtricle = {
 }
 
 export type RoadmapPageProps = Pick<RoadmapAtricle, "title" | "content">
+

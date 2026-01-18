@@ -30,6 +30,7 @@ html {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-footer-resp: 840px;
 }
 
 @media (prefers-color-scheme: dark) {

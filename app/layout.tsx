@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import type { Metadata } from "next"
 import { QueryProvider } from "@features/query/QueryProvider"
 import SideBar from "@features/landing/components/composites/SideBar"
+import Footer from "@features/landing/components/composites/Footer"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,9 +37,12 @@ export default function RootLayout({
             <aside className="h-[80px] shrink-0 md:w-[210px]">
               <SideBar />
             </aside>
-            <main className="w-full md:max-w-[calc(100%-210px-36px)]">
-              {children}
-            </main>
+            <div className="flex w-full flex-col md:max-w-[calc(100%-210px-36px)]">
+              <main className="w-full">{children}</main>
+              <footer className="mt-[84px] w-full pb-[32px] md:mt-[194px] md:pb-[98px]">
+                <Footer />
+              </footer>
+            </div>
           </div>
         </QueryProvider>
       </body>
