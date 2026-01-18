@@ -3,21 +3,21 @@ import { Paragraph } from "../primitive/Paragraph"
 import { List } from "../primitive/List"
 import { DescriptionBlock } from "@features/unicourse/types"
 
-const CourseDescription = ({ blocks }: { blocks: DescriptionBlock[] }) => {
+type Props = {
+  blocks: DescriptionBlock[]
+}
+
+const CourseDescription = ({ blocks }: Props) => {
   return (
     <section>
       <article className="mt-[32px] space-y-6 lg:mt-[48px]">
-        {blocks.map((block, index) => {
-          if (block.type === "paragraph") {
-            return <Paragraph key={index}>{block.content}</Paragraph>
-          }
-
-          if (block.type === "list") {
-            return <List key={index} items={block.items} />
-          }
-
-          return null
-        })}
+        {blocks.map((block, index) =>
+          block.type === "paragraph" ? (
+            <Paragraph key={index}>{block.content}</Paragraph>
+          ) : block.type === "list" ? (
+            <List key={index} items={block.items} />
+          ) : null
+        )}
       </article>
     </section>
   )
