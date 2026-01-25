@@ -1,6 +1,9 @@
 # Use Node.js 20 LTS as base image
 FROM node:20-alpine AS base
 
+# Install git and other build dependencies needed for npm packages
+RUN apk add --no-cache git python3 make g++
+
 # Install pnpm
 RUN npm install -g pnpm
 
