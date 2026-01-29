@@ -2,6 +2,7 @@ import React from "react"
 import Image from "next/image"
 import ImageOne from "../../assets/images/ImageOne.png"
 import Button from "../primitive/Button"
+import PracticeLink from "common/components/primitives/PracticeLink"
 
 const FeatureHero = ({
   header,
@@ -18,7 +19,13 @@ const FeatureHero = ({
             <h1 className="mb-6 text-[32px] leading-[40px] font-black md:text-[36px] lg:text-[44px] lg:leading-[56px] xl:text-[64px] xl:leading-[72px]">
               {header}
             </h1>
-            <p className="mb-6 text-[16px] font-medium">სილაბუსი</p>
+
+            <PracticeLink
+              title="სილაბუსი"
+              href="/syllabus"
+              className="mt-4 mb-6 text-[16px] font-black lg:max-w-[120px]"
+            />
+
             <p className="text-[16px]">
               <span className="font-medium">ხელმძღვანელი</span>
               <span> : </span>

@@ -1,4 +1,4 @@
-import LinkList from "../primitives/LinkLists"
+import PracticeLink from "common/components/primitives/PracticeLink"
 import Link from "next/link"
 import { footerSocials } from "@features/landing/data/footerSocials"
 import {
@@ -59,14 +59,18 @@ const Footer = () => {
         </div>
 
         <div className="footer-resp:flex footer-resp:flex-1 footer-resp:justify-end order-3 hidden">
-          <LinkList
-            items={footerSocials}
-            ulClassName="flex gap-6
-              footer-resp:flex-col footer-resp:gap-[20px] footer-resp:w-[142px]"
-            linkClassName="flex items-center gap-2 justify-between"
-            labelClassName="font-medium uppercase footer-resp:text-[14px] lg:text-[16px]"
-            arrowClassName="h-4 w-4"
-          />
+          <ul className="footer-resp:flex-col footer-resp:gap-[20px] footer-resp:w-[142px] flex gap-6">
+            {footerSocials.map((social) => (
+              <li key={social.id}>
+                <PracticeLink
+                  title={social.label}
+                  href={social.href}
+                  target="_blank"
+                  className="footer-resp:text-[14px] font-medium uppercase lg:text-[16px]"
+                />
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="footer-resp:hidden order-3 flex gap-6">
