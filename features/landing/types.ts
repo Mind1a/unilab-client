@@ -47,7 +47,8 @@ export type AccelerationLink = {
 
 // FAQ section props types
 export type FaqProps = {
-  id: string
+  id: number
+  order_num: number
   question: string
   answer: string
 }

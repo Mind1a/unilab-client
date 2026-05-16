@@ -1,10 +1,14 @@
 "use client"
-
 import { FaqProps } from "@features/landing/types"
-import { Faqs } from "@features/landing/data/landingData"
 import Question from "../primitives/Question"
+import { useFaq } from "@features/landing/hooks/useFaq"
 
 const Faq = () => {
+  const { data: faqs = [], error, isLoading } = useFaq()
+
+  if (isLoading) return <p className="mx-auto">loading...</p>
+  if (error) return <p className="mx-auto text-red-500">{error.message}</p>
+
   return (
     <div id="faq" className="space-y-6 lg:space-y-22">
       <div className="space-y-4 lg:space-y-6">
@@ -17,8 +21,12 @@ const Faq = () => {
         </p>
       </div>
       <div>
-        {Faqs.map((faq: FaqProps) => (
-          <Question key={faq.id} title={faq.question} id={faq.id}>
+        {faqs.map((faq: FaqProps) => (
+          <Question
+            key={faq.id}
+            title={faq.question}
+            id={faq.order_num.toString()}
+          >
             {faq.answer}
           </Question>
         ))}
